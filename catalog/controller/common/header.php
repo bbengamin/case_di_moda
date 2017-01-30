@@ -4,10 +4,11 @@ class ControllerCommonHeader extends Controller {
 		// Analytics
 
         $data['header_type'] = "header1";
-
-        if($this->request->get['route'] == 'product/product'){
-            $data['header_type'] = "header2";
-        }
+		if(isset($this->request->get['route'])){
+	        if($this->request->get['route'] == 'product/product'){
+	            $data['header_type'] = "header2";
+	        }
+		}
 
 		$this->load->model('extension/extension');
 

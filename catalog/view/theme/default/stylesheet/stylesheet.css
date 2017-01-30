@@ -205,8 +205,8 @@ div.required .control-label:before {
 }
 /* top */
 #top {
-	/*background-color: #EEEEEE;
-	border-bottom: 1px solid #e2e2e2;*/
+	background-color: #fff;
+	/*border-bottom: 1px solid #e2e2e2;*/
 	padding: 4px 0px 3px 0;
 	margin: 0 0 0 0;
 	min-height: 1px;
@@ -342,7 +342,7 @@ header {
 	padding-left: 0;
 }
 #menu .nav > li > a:hover, #menu .nav > li.open > a {
-	background-color: rgba(0, 0, 0, 0.1);
+	color: #666;
 }
 #menu .dropdown-menu {
 	padding-bottom: 0;
@@ -920,8 +920,11 @@ h2.price {
 	font-weight: 400;
 	line-height: 36px;
 	text-transform: uppercase;
-	padding-top: 10px;
 	display: block;
+}
+header .row {
+	display: flex;
+	align-items: center;
 }
 .left-icons {
 	display: inline-block;
@@ -1018,6 +1021,9 @@ h2.price {
 }
 .soc-icon .fa {
 	font-size: 16px;
+}
+.main-menu-wrapper {
+	background: #fff;
 }
 /*.head-menu-first {
 	margin-bottom: 0;
@@ -1186,4 +1192,23 @@ h2.price {
 }
 .cprt a:hover {
 	color: #5a5a5a;
+}
+.sec-header-inner {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sec-header-inner li {
+    display: flex;
+    flex-direction: column;
+}
+.head-second-phone {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36px;
+    display: block;
+}
+.head-second-phone-info {
+	
 }
