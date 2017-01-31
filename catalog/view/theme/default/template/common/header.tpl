@@ -41,7 +41,7 @@
 
 <!-- Все страницы, кроме избранных -->
 <?php if($header_type == 'header1') { ?>
-<header>
+<header class='m-head-first'>
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
@@ -75,13 +75,12 @@
                   <!--<li><button type="button" id="call-back-btn" data-toggle="modal" data-target="#myModal-call-back" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product call-back-btn">Перезвоните мне</button></li>-->
                   <li class='soc-icon'><a href="#" title=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                   <li class='soc-icon'><a href="#" title=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                  <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle login-reg-btn" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
+                  <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle login-reg-btn" data-toggle="dropdown"><span class="left-icons user-ico"><img src="/catalog/view/theme/default/image/user-icon.png" class="img-responsive"> </span> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu my-settings-menu">
                       <?php if ($logged) { ?>
                       <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
                       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-                      <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-                      <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+                      <li><a href="<?php echo $account; ?>">Настройки</a></li>
                       <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
                       <?php } else { ?>
                       <li><button type="button" id="registration-btn" data-toggle="modal" data-target="#registration" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product registration-btn">Зарегистрироваться</button></li>
@@ -126,7 +125,12 @@
         <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
         <?php } ?>
         <?php } ?>
-        <li><?php echo $cart; ?></li>
+        <li class='sec-head-right-side-box'>
+          <ul class='list-unstyled sec-head-right-side'>
+            <li class='sec-head-right-side-item'><?php echo $cart; ?></li>
+            <li class='sec-head-right-side-item'><?php echo $search; ?></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
@@ -155,10 +159,10 @@
                 </div>
                 </div>
                 </nav>
-<header>
+<header class='m-head-second'>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <div id="logo">
           <?php if ($logo) { ?>
           <!--<a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>-->
@@ -168,7 +172,7 @@
           <h1><a href="<?php echo $home; ?>">casa di moda</a></h1>
         </div>
       </div>
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         
               
                 <ul class="list-inline sec-header-inner">
@@ -180,7 +184,7 @@
                     <span class='head-second-phone'>+7(495)363-39-75</span>
                     <span class='head-second-phone-info'>Часы работы 10:00-21:00 МСК</span>
                   </li>
-                  <li><button type="button" id="call-back-btn" data-toggle="modal" data-target="#myModal-call-back" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product call-back-btn">Позвоните мне</button></li>
+                  <li><button type="button" id="call-back-btn" data-toggle="modal" data-target="#myModal-call-back" data-loading-text="Загрузка..." class="buttons-product call-back-btn">Позвоните мне</button></li>
                   
                 </ul>
               </div>
@@ -192,7 +196,7 @@
   </div>
 </header>
 
-<div class="main-menu-wrapper">
+<div class="main-menu-wrapper main-menu-wrapper-sec-header">
 <?php if ($categories) { ?>
 <div class="container">
   <nav id="menu" class="navbar">
@@ -221,14 +225,16 @@
         <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
         <?php } ?>
         <?php } ?>
-        <li><?php echo $cart; ?></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle login-reg-btn" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
+        <li class='sec-head-right-side-box'>
+          <ul class='list-unstyled sec-head-right-side'>
+            <li class='sec-head-right-side-item'><?php echo $cart; ?></li>
+            
+            <li class="sec-head-right-side-item dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle login-reg-btn" data-toggle="dropdown"><span class="left-icons user-ico"><img src="/catalog/view/theme/default/image/user-icon.png" class="img-responsive"> </span> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu my-settings-menu">
                       <?php if ($logged) { ?>
                       <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
                       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-                      <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-                      <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+                      <li><a href="<?php echo $account; ?>">Настройки</a></li>
                       <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
                       <?php } else { ?>
                       <li><button type="button" id="registration-btn" data-toggle="modal" data-target="#registration" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product registration-btn">Зарегистрироваться</button></li>
@@ -236,6 +242,8 @@
                       <?php } ?>
                     </ul>
                   </li>
+          </ul>
+          </li>
       </ul>
     </div>
   </nav>

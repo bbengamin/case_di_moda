@@ -1,7 +1,30 @@
 <?php
 
 class ControllerCheckoutBuy extends Controller {
+    public function editMy() {
+        $this->load->language('checkout/buy');
 
+        $json = array();
+
+        // Update
+        if (!empty($this->request->post['quantity'])) {
+            foreach ($this->request->post['quantity'] as $key => $value) {
+                $this->cart->update($key, $value);
+            }
+
+            unset($this->session->data['shipping_method']);
+            unset($this->session->data['shipping_methods']);
+            unset($this->session->data['payment_method']);
+            unset($this->session->data['payment_methods']);
+            unset($this->session->data['reward']);
+
+            $json['success'] = 'success';
+            $this->response->setOutput(json_encode($json));
+        }
+
+        $this->response->addHeader('Content-Type: application/json');
+        $this->response->setOutput(json_encode($json));
+    }
     public function index() {
         $this->load->language('checkout/buy');
         $this->load->model('setting/setting');
@@ -184,7 +207,7 @@ class ControllerCheckoutBuy extends Controller {
                 }
 
                 $data['products'][] = array(
-                    'key' => $product['key'],
+                    'key' => $product['cart_id'],
                     'thumb' => $image,
                     'name' => $product['name'],
                     'model' => $product['model'],
@@ -541,10 +564,10 @@ class ControllerCheckoutBuy extends Controller {
 
             /* END Guest information */
 
-            $data['coupon'] = $this->load->controller('checkout/coupon');
-            $data['voucher'] = $this->load->controller('checkout/voucher');
-            $data['reward'] = $this->load->controller('checkout/reward');
-            $data['shipping'] = $this->load->controller('checkout/shipping');
+            $data['coupon'] = $this->load->controller('total/coupon');
+            //$data['voucher'] = $this->load->controller('checkout/voucher');
+            //$data['reward'] = $this->load->controller('checkout/reward');
+            //$data['shipping'] = $this->load->controller('checkout/shipping');
             $data['column_left'] = $this->load->controller('common/column_left');
             $data['column_right'] = $this->load->controller('common/column_right');
             $data['content_top'] = $this->load->controller('common/content_top');
@@ -1484,9 +1507,8 @@ class ControllerCheckoutBuy extends Controller {
 
                 $json = array();
                 $json['totals'] = '';
-                foreach ($total_data as $total) {
-                    $json['totals'] .= '<tr class="total-item"><td colspan="4" style="border:none;"> </td><td class="text-right"><strong>'.$total['title'].'</strong></td><td class="text-right">'.$this->currency->format($total['value']).'</td></tr>';
-                }
+                $total = end($total_data);
+                $json['totals'] .= '<tr class="total-item"><td colspan="4" style="border:none;"> </td><td class="text-right"><strong>'.$total['title'].'</strong></td><td class="text-right">'.$this->currency->format($total['value']).'</td></tr>';
                 
                 $this->response->setOutput(json_encode($json));
             }

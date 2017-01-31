@@ -49,7 +49,9 @@ class ModelCatalogProduct extends Model {
 				'status'           => $query->row['status'],
 				'date_added'       => $query->row['date_added'],
 				'date_modified'    => $query->row['date_modified'],
-				'viewed'           => $query->row['viewed']
+				'viewed'           => $query->row['viewed'],
+				'view_now'         => $query->row['fake_view_now'],
+				'rest'             => $query->row['fake_rest']
 			);
 		} else {
 			return false;
@@ -507,5 +509,10 @@ class ModelCatalogProduct extends Model {
 		} else {
 			return 0;
 		}
+	}
+	
+	public function getProductIDs() {
+		$query = $this->db->query("SELECT `product_id` AS id FROM " . DB_PREFIX . "product ");
+		return $query;
 	}
 }

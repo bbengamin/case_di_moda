@@ -6,10 +6,10 @@
       <table class="table table-striped">
         <?php foreach ($products as $product) { ?>
         <tr>
-          <td class="text-center"><?php if ($product['thumb']) { ?>
+          <td class="text-center mini-cart-img-box"><?php if ($product['thumb']) { ?>
             <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
             <?php } ?></td>
-          <td class="text-left"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+          <td class="text-left mini-cart-name-box"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
             <?php if ($product['option']) { ?>
             <?php foreach ($product['option'] as $option) { ?>
             <br />
@@ -19,10 +19,10 @@
             <?php if ($product['recurring']) { ?>
             <br />
             - <small><?php echo $text_recurring; ?> <?php echo $product['recurring']; ?></small>
-            <?php } ?></td>
-          <td class="text-right">x <?php echo $product['quantity']; ?></td>
-          <td class="text-right"><?php echo $product['total']; ?></td>
-          <td class="text-center"><button type="button" onclick="cart.remove('<?php echo $product['cart_id']; ?>');" title="<?php echo $button_remove; ?>" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+            <?php } ?><br>
+            <span class='total-product-mini-cart'><?php echo $product['total']; ?></span>
+            </td>
+          <td class="text-center mini-cart-remoove-box"><button type="button" onclick="cart.remove('<?php echo $product['cart_id']; ?>');" title="<?php echo $button_remove; ?>" class="mini-cart-remoove"><i class="fa fa-times"></i></button></td>
         </tr>
         <?php } ?>
         <?php foreach ($vouchers as $voucher) { ?>
@@ -41,12 +41,12 @@
         <table class="table table-bordered">
           <?php foreach ($totals as $total) { ?>
           <tr>
-            <td class="text-right"><strong><?php echo $total['title']; ?></strong></td>
+            <td class="text-right"><strong>Итого</strong></td>
             <td class="text-right"><?php echo $total['text']; ?></td>
           </tr>
           <?php } ?>
         </table>
-        <p class="text-right"><a href="<?php echo $cart; ?>"><strong><i class="fa fa-shopping-cart"></i> <?php echo $text_cart; ?></strong></a>&nbsp;&nbsp;&nbsp;<a href="<?php echo $checkout; ?>"><strong><i class="fa fa-share"></i> <?php echo $text_checkout; ?></strong></a></p>
+        <p class="text-right"><a href="<?php echo $checkout; ?>" class='mini-cart-remoove-btn'><?php echo $text_checkout; ?></a></p>
       </div>
     </li>
     <?php } else { ?>

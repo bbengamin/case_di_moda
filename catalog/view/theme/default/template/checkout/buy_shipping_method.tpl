@@ -10,9 +10,9 @@
   <label>
     <?php if ($quote['code'] == $code || !$code) { ?>
     <?php $code = $quote['code']; ?>
-    <input type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>" checked="checked" data-cost="<?php echo $quote['cost']; ?>" />
+    <input type="radio" data-text="<?php echo $quote['title']; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" checked="checked" data-cost="<?php echo $quote['cost']; ?>" />
     <?php } else { ?>
-    <input type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>" data-cost="<?php echo $quote['cost']; ?>" />
+    <input type="radio" data-text="<?php echo $quote['title']; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" data-cost="<?php echo $quote['cost']; ?>" />
     <?php } ?>
     <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?></label>
 </div>

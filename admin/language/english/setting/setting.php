@@ -36,6 +36,7 @@ $_['entry_address']                    = 'Address';
 $_['entry_geocode']                    = 'Geocode';
 $_['entry_email']                      = 'E-Mail';
 $_['entry_telephone']                  = 'Telephone';
+$_['entry_telephone2']                  = 'Telephone2';
 $_['entry_fax']                        = 'Fax';
 $_['entry_image']                      = 'Image';
 $_['entry_open']                       = 'Opening Times';
