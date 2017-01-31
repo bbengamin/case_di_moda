@@ -46,6 +46,7 @@ class ControllerCommonFooter extends Controller {
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
 
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+		$data['last_bought'] = $this->config->get('last_bought');
 
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {

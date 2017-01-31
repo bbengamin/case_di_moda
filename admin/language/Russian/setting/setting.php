@@ -36,7 +36,7 @@ $_['entry_address']                    = 'Адрес магазина';
 $_['entry_geocode']                    = 'Geocode';
 $_['entry_email']                      = 'E-Mail';
 $_['entry_telephone']                  = 'Телефон';
-$_['entry_telephone2']                  = 'Телефон2';
+$_['entry_telephone2']                 = 'Телефон2';
 $_['entry_fax']                        = 'Факс';
 $_['entry_image']                      = 'Изображение';
 $_['entry_open']                       = 'Режим работы';
@@ -139,6 +139,7 @@ $_['entry_error_display']              = 'Показывать ошибки';
 $_['entry_error_log']                  = 'Записывать ошибки';
 $_['entry_error_filename']             = 'Файл журнала ошибок';
 $_['entry_status']                     = 'Статус';
+$_['entry_last_bought_locations']      = 'Список городов для всплывающего окна `Только что купили`';
 
 // Help
 $_['help_geocode']                     = 'Пожалуйста, введите ваше местонахождение как GeoCode.';

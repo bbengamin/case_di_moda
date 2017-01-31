@@ -161,6 +161,7 @@ class ControllerSettingSetting extends Controller {
 		$data['entry_error_log'] = $this->language->get('entry_error_log');
 		$data['entry_error_filename'] = $this->language->get('entry_error_filename');
 		$data['entry_status'] = $this->language->get('entry_status');
+		$data['entry_last_bought_locations'] = $this->language->get('entry_last_bought_locations');
 
 		$data['help_geocode'] = $this->language->get('help_geocode');
 		$data['help_open'] = $this->language->get('help_open');
@@ -278,6 +279,12 @@ class ControllerSettingSetting extends Controller {
 			$data['error_telephone2'] = $this->error['telephone2'];
 		} else {
 			$data['error_telephone2'] = '';
+		}
+		
+		if (isset($this->error['last_bought_locations'])) {
+			$data['error_last_bought_locations'] = $this->error['last_bought_locations'];
+		} else {
+			$data['error_last_bought_locations'] = '';
 		}
 
 		if (isset($this->error['meta_title'])) {
@@ -520,6 +527,13 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_telephone2'] = $this->config->get('config_telephone2');
 		}
+		
+		if (isset($this->request->post['config_last_bought_locations'])) {
+			$data['config_last_bought_locations'] = $this->request->post['config_last_bought_locations'];
+		} else {
+			$data['config_last_bought_locations'] = $this->config->get('config_last_bought_locations');
+		}
+
 
 		if (isset($this->request->post['config_fax'])) {
 			$data['config_fax'] = $this->request->post['config_fax'];
@@ -1366,6 +1380,11 @@ class ControllerSettingSetting extends Controller {
 		if ((utf8_strlen($this->request->post['config_telephone2']) < 3) || (utf8_strlen($this->request->post['config_telephone2']) > 32)) {
 			$this->error['telephone2'] = $this->language->get('error_telephone');
 		}
+/*		
+		if (!preg_match('/^[a-zA-Zа-яА-Я,\- ]+$/i', $this->request->post['config_last_bought_locations'])) {
+			$this->error['last_bought_locations'] = $this->language->get('last_bought_locations');
+		}*/
+		
 		
 		if (!$this->request->post['config_meta_title']) {
 			$this->error['meta_title'] = $this->language->get('error_meta_title');

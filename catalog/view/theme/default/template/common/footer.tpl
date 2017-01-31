@@ -53,7 +53,7 @@
     <hr>
     <p class="cprt">© 2016 <a href="http://CasaDiMora.com">CasaDiMora.com</a> Все права защищены. Информация на сайте не является публичной офертой</p>
   </div>
-
+  <?php echo $last_bought ?>
   <!-- Modal callback -->
   <div id="myModal-call-back" class="modal fade" role="dialog">
     <div class="modal-dialog">

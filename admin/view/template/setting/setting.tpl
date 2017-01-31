@@ -171,6 +171,15 @@
                     <textarea name="config_open" rows="5" placeholder="<?php echo $entry_open; ?>" id="input-open" class="form-control"><?php echo $config_open; ?></textarea>
                   </div>
                 </div>
+                <div class="form-group required">
+                  <label class="col-sm-2 control-label" for="input-last_bought_locations"><?php echo $entry_last_bought_locations; ?></label>
+                  <div class="col-sm-10">
+                    <input type="text" name="config_last_bought_locations" value="<?php echo $config_last_bought_locations; ?>" placeholder="<?php echo $entry_last_bought_locations; ?>" id="input-last_bought_locations" class="form-control" />
+                    <?php if ($error_last_bought_locations) { ?>
+                    <div class="text-danger"><?php echo $error_last_bought_locations; ?></div>
+                    <?php } ?>
+                  </div>
+                </div>
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="input-comment"><span data-toggle="tooltip" data-container="#tab-general" title="<?php echo $help_comment; ?>"><?php echo $entry_comment; ?></span></label>
                   <div class="col-sm-10">

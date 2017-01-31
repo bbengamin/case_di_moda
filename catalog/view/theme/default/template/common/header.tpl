@@ -108,7 +108,7 @@
       <ul class="nav navbar-nav">
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
-        <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
+        <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle top-menu-link" data-toggle="dropdown"><?php echo $category['name']; ?></a>
           <div class="dropdown-menu">
             <div class="dropdown-inner">
               <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
@@ -177,11 +177,11 @@
               
                 <ul class="list-inline sec-header-inner">
                   <li>
-                    <span class='head-second-phone'>8(800)200-39-75</span>
+                    <span class='head-second-phone'><?php echo $telephone; ?></span>
                     <span class='head-second-phone-info'>Бесплатный звонок по РФ</span>
                   </li>
                   <li>
-                    <span class='head-second-phone'>+7(495)363-39-75</span>
+                    <span class='head-second-phone'><?php echo $telephone2; ?></span>
                     <span class='head-second-phone-info'>Часы работы 10:00-21:00 МСК</span>
                   </li>
                   <li><button type="button" id="call-back-btn" data-toggle="modal" data-target="#myModal-call-back" data-loading-text="Загрузка..." class="buttons-product call-back-btn">Позвоните мне</button></li>
@@ -207,7 +207,7 @@
       <ul class="nav navbar-nav">
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
-        <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
+        <li class="dropdown"><a onclick='location.href = "<?php echo $category['href']; ?>"' href="<?php echo $category['href']; ?>" class="dropdown-toggle top-menu-link" data-toggle="dropdown"><?php echo $category['name']; ?></a>
           <div class="dropdown-menu">
             <div class="dropdown-inner">
               <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
@@ -218,13 +218,14 @@
               </ul>
               <?php } ?>
             </div>
-            <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
+          </div>
         </li>
         
         <?php } else { ?>
         <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
         <?php } ?>
         <?php } ?>
+     
         <li class='sec-head-right-side-box'>
           <ul class='list-unstyled sec-head-right-side'>
             <li class='sec-head-right-side-item'><?php echo $cart; ?></li>

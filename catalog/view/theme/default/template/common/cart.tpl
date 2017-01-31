@@ -38,15 +38,15 @@
     </li>
     <li>
       <div>
-        <table class="table table-bordered">
-          <?php foreach ($totals as $total) { ?>
-          <tr>
-            <td class="text-right"><strong>Итого</strong></td>
-            <td class="text-right"><?php echo $total['text']; ?></td>
-          </tr>
-          <?php } ?>
-        </table>
-        <p class="text-right"><a href="<?php echo $checkout; ?>" class='mini-cart-remoove-btn'><?php echo $text_checkout; ?></a></p>
+        
+        <p class="text-right">
+           <?php foreach ($totals as $total) { ?>
+          <span>
+            <i><strong>Итого</strong></i>
+            <span><?php echo $total['text']; ?></span>
+          </span>
+           <?php } ?>
+          <a href="<?php echo $checkout; ?>" class='mini-cart-remoove-btn'>Оформить</a></p>
       </div>
     </li>
     <?php } else { ?>

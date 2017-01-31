@@ -23,6 +23,9 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
+	 $('.top-menu-link').on('click',function(){
+        location.href = $(this).attr("href");
+      });
 	// Highlight any found errors
 	$('.text-danger').each(function() {
 		var element = $(this).parent().parent();

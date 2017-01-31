@@ -92,6 +92,7 @@ class ControllerCommonHeader extends Controller {
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 		$data['contact'] = $this->url->link('information/contact');
 		$data['telephone'] = $this->config->get('config_telephone');
+		$data['telephone2'] = $this->config->get('config_telephone2');
 
 		$status = true;
 
@@ -124,13 +125,22 @@ class ControllerCommonHeader extends Controller {
 				$children = $this->model_catalog_category->getCategories($category['category_id']);
 
 				foreach ($children as $child) {
-					$filter_data = array(
-						'filter_category_id'  => $child['category_id'],
-						'filter_sub_category' => true
-					);
+					
+					$children2_data = array();
 
+					$children2 = $this->model_catalog_category->getCategories($child['category_id']);
+	
+					foreach ($children2 as $child2) {
+						
+						$children2_data[] = array(
+							'name'  => $child2['name'],
+							'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']. '_' . $child2['category_id'])
+						);
+					}
+					
 					$children_data[] = array(
-						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+						'children' => $children2_data,
+						'name'  => $child['name'],
 						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
 					);
 				}
