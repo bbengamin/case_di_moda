@@ -519,7 +519,7 @@ class ControllerModuleMegaFilter extends Controller {
 				'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
 			);
 		}
-					
+		
 		$url = '';
 
 				if( ! empty( $this->request->get['mfp'] ) ) {

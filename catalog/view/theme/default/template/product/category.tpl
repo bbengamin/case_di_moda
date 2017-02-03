@@ -69,7 +69,7 @@
       <div class="row">
         <div class="col-md-12 sorts-box">
           <p>Сортировть по </p>
-          <a class='custom-sort <?php echo $sorts['default']['view']; ?> <?php echo ($sorts['default']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['default']['href']; ?>'>Умолчанию ↑	↓</a>
+          <!--<a class='custom-sort <?php echo $sorts['default']['view']; ?> <?php echo ($sorts['default']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['default']['href']; ?>'>Умолчанию ↑	↓</a> -->
           <a class='custom-sort <?php echo $sorts['price']['view']; ?> <?php echo ($sorts['price']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['price']['href']; ?>'>Цене ↑	↓</a>
           <a class='custom-sort <?php echo $sorts['name']['view']; ?> <?php echo ($sorts['name']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['name']['href']; ?>'>Названию ↑	↓</a>
         </div>

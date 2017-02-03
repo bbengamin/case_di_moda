@@ -88,7 +88,7 @@ function library($class) {
 	$file = DIR_SYSTEM . 'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
 
 	if (is_file($file)) {
-		include_once(\VQMod::modCheck(modification($file), $file));
+		include_once(VQMod::modCheck(modification($file), $file));
 
 		return true;
 	} else {
@@ -100,7 +100,7 @@ function vendor($class) {
 	$file = DIR_SYSTEM . 'vendor/' . str_replace('\\', '/', strtolower($class)) . '.php';
 
 	if (is_file($file)) {
-		include_once(\VQMod::modCheck(modification($file), $file));
+		include_once(VQMod::modCheck(modification($file), $file));
 
 		return true;
 	} else {
@@ -113,15 +113,15 @@ spl_autoload_register('vendor');
 spl_autoload_extensions('.php');
 
 // Engine
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/action.php'), DIR_SYSTEM . 'engine/action.php'));
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/controller.php'), DIR_SYSTEM . 'engine/controller.php'));
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/event.php'), DIR_SYSTEM . 'engine/event.php'));
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/front.php'), DIR_SYSTEM . 'engine/front.php'));
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/loader.php'), DIR_SYSTEM . 'engine/loader.php'));
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/model.php'), DIR_SYSTEM . 'engine/model.php'));
-require_once(\VQMod::modCheck(modification(DIR_SYSTEM . 'engine/registry.php'), DIR_SYSTEM . 'engine/registry.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/action.php'), DIR_SYSTEM . 'engine/action.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/controller.php'), DIR_SYSTEM . 'engine/controller.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/event.php'), DIR_SYSTEM . 'engine/event.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/front.php'), DIR_SYSTEM . 'engine/front.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/loader.php'), DIR_SYSTEM . 'engine/loader.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/model.php'), DIR_SYSTEM . 'engine/model.php'));
+require_once(VQMod::modCheck(modification(DIR_SYSTEM . 'engine/registry.php'), DIR_SYSTEM . 'engine/registry.php'));
 
 // Helper
-require_once(\VQMod::modCheck(DIR_SYSTEM . 'helper/general.php'));
-require_once(\VQMod::modCheck(DIR_SYSTEM . 'helper/json.php'));
-require_once(\VQMod::modCheck(DIR_SYSTEM . 'helper/utf8.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'helper/general.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'helper/json.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'helper/utf8.php'));

@@ -1,11 +1,11 @@
 -----------------------------------------
-vQmod™ - Virtual File Modification System
+vQmodâ„¢ - Virtual File Modification System
 -----------------------------------------
 
 ABOUT:
 ======
  * @author Qphoria <qphoria@gmail.com> & Jay Gilford <jay@jaygilford.com>
- * @copyright (c) 2010-2016
+ * @copyright (c) 2010-2014
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  * @site: http://vqmod.com
 
@@ -18,4 +18,7 @@ substituted for the real file in the include path.
 ==========================================================
 See website for additional information, usage, and syntax:
 http://vqmod.com
+
+See website for OpenCart Install information
+http://code.google.com/p/vqmod/wiki/Install_OpenCart
 ==========================================================

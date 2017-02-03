@@ -88,15 +88,17 @@
 
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="modal-body">
+        <div class="modal-body clearfix">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <div class="modal-form">
+          <div class="modal-form col-sm-8">
             <form id="activate-for-form-form">
-              <p>Активируй скидку 20%, которая будет действительна только в течение 60 минут!</p>
-              <div class="input-field">
-                <button type="submit" id="activate-special-btn">Активировать</button>
+              <div class='speciales-text'>
+                <h4>Хочешь скидку <i>20%</i></h4>
+                <p>Активируй низкие цены, которые<br> будет действовать только 60 минут!</p>
               </div>
-              <div class="input-field">
+              <div class="input-field input-field-specials">
+                <button type="submit" id="activate-special-btn">Активировать</button>
+             
                 <button type="submit" id="go-to-login-button" >Войти в личный кабинет</button>
               </div>
             </form>
@@ -293,3 +295,5 @@
   });
 </script>
 </body></html>
+
+

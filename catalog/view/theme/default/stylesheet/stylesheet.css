@@ -2027,8 +2027,15 @@ font-family: "MuseoSansBold";
 .mfilter-slider-slider .ui-slider-range, #mfilter-price-slider .ui-slider-range {
 	background: #4069be!important;
 }
-.mfilter-price-inputs {
-	display: none;
+#mfilter-opts-price-min, #mfilter-opts-price-max {
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    display: inline-block;
+    background: #efefef;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
 }
 .mfilter-button-bottom {
     display: flex;
@@ -2685,10 +2692,13 @@ tbody > tr > td > img {
 	padding: 5px 0;
 }
 .advantages-box {
-	    display: flex;
+	       display: flex;
     align-items: center;
     justify-content: center;
-    margin: 120px auto;
+    margin: 60px auto;
+    background: #fcfcfc;
+    padding: 60px 0;
+    
 }
 .advantages-item {
 	text-align: center;
@@ -2843,8 +2853,48 @@ label.mfilter-tb-as-td:before {
 	display: none;
 }
 #myModal-activate-special .modal-dialog {
-	    width: 55%;
-    height: 210px;
+	width: 600px;
+    height: 155px;
+}
+#myModal-activate-special .modal-content {
+	background: url(/catalog/view/theme/default/image/popup-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.speciales-text h4 {
+	color: #222222;
+	font-family: "MuseoSansRegular";
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: left;
+}
+.speciales-text h4 i {
+	color: #157fbe;
+	font-family: "MuseoSansRegular";
+	font-size: 34px;
+	font-weight: 900;
+	line-height: 18px;
+	font-style: normal;
+	text-align: left;
+}
+.speciales-text p {
+	color: #0c0402;
+	font-family: "MuseoSansRegular";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+	text-align: left;
+}
+.input-field.input-field-specials {
+	    display: flex;
+    justify-content: space-between;
+}
+.input-field.input-field-specials button {
+	width: auto;
+}
+.input-field.input-field-specials button:last-child {
+	background: transparent;
+	color: #484848;
 }
 @media (max-width:1200px) {
 	.interest-box {

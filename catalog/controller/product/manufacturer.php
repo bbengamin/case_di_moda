@@ -233,35 +233,54 @@ class ControllerProductManufacturer extends Controller {
 
 			$data['sorts'] = array();
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_default'),
-				'value' => 'p.sort_order-ASC',
-				'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.sort_order&order=ASC' . $url)
-			);
+			if($sort == "p.sort_order" && $order == "ASC"){
+				$data['sorts']['default'] = array(
+					'text'  => $this->language->get('text_default'),
+					'value' => 'p.sort_order-DESC',
+					'view' => 'up',
+					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.sort_order&order=DESC' . $url)
+				);
+			}else {
+				$data['sorts']['default'] = array(
+					'text'  => $this->language->get('text_default'),
+					'value' => 'p.sort_order-ASC',
+					'view' => 'down',
+					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.sort_order&order=ASC' . $url)
+				);
+			}
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_asc'),
-				'value' => 'pd.name-ASC',
-				'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=pd.name&order=ASC' . $url)
-			);
+			if($sort == "pd.name" && $order == "ASC"){
+				$data['sorts']['name'] = array(
+					'text'  => $this->language->get('text_name_desc'),
+					'value' => 'pd.name-DESC',
+					'view' => 'up',
+					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=pd.name&order=DESC' . $url)
+				);
+			} else {
+				$data['sorts']['name'] = array(
+					'text'  => $this->language->get('text_name_asc'),
+					'value' => 'pd.name-ASC',
+					'view' => 'down',
+					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=pd.name&order=ASC' . $url)
+				);
+			}
+			
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_desc'),
-				'value' => 'pd.name-DESC',
-				'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=pd.name&order=DESC' . $url)
-			);
-
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_asc'),
-				'value' => 'p.price-ASC',
-				'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.price&order=ASC' . $url)
-			);
-
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_desc'),
-				'value' => 'p.price-DESC',
-				'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.price&order=DESC' . $url)
-			);
+			if($sort == "p.price" && $order == "ASC"){
+				$data['sorts']['price'] = array(
+					'text'  => $this->language->get('text_price_desc'),
+					'value' => 'p.price-DESC',
+					'view' => 'up',
+					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.price&order=DESC' . $url)
+				);
+			}else{
+				$data['sorts']['price'] = array(
+					'text'  => $this->language->get('text_price_asc'),
+					'value' => 'p.price-ASC',
+					'view' => 'down',
+					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.price&order=ASC' . $url)
+				);
+			}
 
 			if ($this->config->get('config_review_status')) {
 				$data['sorts'][] = array(

@@ -21705,3 +21705,682 @@
 2017-02-03 19:44:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
 2017-02-03 19:45:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 276
 2017-02-03 19:45:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 277
+2017-02-03 19:46:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 276
+2017-02-03 19:46:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 277
+2017-02-03 19:46:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
+2017-02-03 19:46:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
+2017-02-03 19:51:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
+2017-02-03 19:51:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
+2017-02-03 19:53:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 276
+2017-02-03 19:53:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 277
+2017-02-03 19:53:07 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 19:53:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 19:53:07 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 19:53:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 19:53:07 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 19:53:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 19:53:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 276
+2017-02-03 19:53:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 277
+2017-02-03 19:53:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 276
+2017-02-03 19:53:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 277
+2017-02-03 19:53:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 276
+2017-02-03 19:53:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/common/header.tpl on line 277
+2017-02-03 20:01:53 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:01:53 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:01:53 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:01:53 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:01:53 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:01:53 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:01:53 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:01:53 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:01:53 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:01:53 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:01:53 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:01:53 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:02:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
+2017-02-03 20:02:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/product/category.tpl on line 110
+2017-02-03 20:03:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:29 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:29 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:03:36 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:03:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:03:36 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:03:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:03:36 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:03:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:03:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:03:39 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:39 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:40 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:40 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:03:47 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:03:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:03:47 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:03:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:03:47 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:03:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:03:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:03:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:03:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:03:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:54 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:54 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:03:59 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '61' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:03:59 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:03:59 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:03:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:03:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:01 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(7) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(7) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(7) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '61' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:01 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:01 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:05 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:05 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:05 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:12 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '61' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:12 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:16 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:16 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:16 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:22 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:26 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '62' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '62' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '62' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:26 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:26 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:28 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(7) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(7) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(7) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '61' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:28 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:28 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:29 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(9) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(9) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '62' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(9) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '62' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '62' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:29 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:29 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:29 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:29 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:30 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:30 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:32 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(8) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '61' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:32 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:32 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:33 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`p`.`manufacturer_id` IN(5) AND  `p`.`date_available` <= NOW() AND `p`.`status` ' at line 1<br />Error No: 1064<br />SELECT * FROM(  SELECT * FROM(SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps   WHERE `p`.`manufacturer_id` IN(5) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '62' AND  ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)      `p`.`manufacturer_id` IN(5) AND  `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '62' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '62' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp` ) AS `tmp` LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:33 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:35 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:35 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:35 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:04:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:04:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:38 - PHP Notice:  Error: Duplicate column name 'mf_price'<br />Error No: 1060<br />SELECT * FROM(SELECT * FROM(SELECT p.product_id,( ( 
+			IFNULL( (SELECT `price` FROM `oc_product_special` AS `ps` WHERE `ps`.`product_id` = `p`.`product_id` AND `ps`.`customer_group_id` = '1' AND ((`ps`.`date_start` = '0000-00-00' OR `ps`.`date_start` < NOW()) AND (`ps`.`date_end` = '0000-00-00' OR `ps`.`date_end` > NOW())) ORDER BY `ps`.`priority` ASC, `ps`.`price` ASC LIMIT 1), IFNULL( (SELECT `price` FROM `oc_product_discount` AS `pd2` WHERE `pd2`.`product_id` = `p`.`product_id` AND `pd2`.`customer_group_id` = '1' AND `pd2`.`quantity` = '1' AND ((`pd2`.`date_start` = '0000-00-00' OR `pd2`.`date_start` < NOW()) AND (`pd2`.`date_end` = '0000-00-00' OR `pd2`.`date_end` > NOW())) ORDER BY `pd2`.`priority` ASC, `pd2`.`price` ASC LIMIT 1), `p`.`price` ) )
+		 * ( 1 + IFNULL(
+			(
+				SELECT
+					SUM(`tr2`.`rate`)
+				FROM
+					`oc_tax_rule` AS `tr1`
+				LEFT JOIN
+					`oc_tax_rate` AS `tr2`
+				ON
+					`tr1`.`tax_rate_id` = `tr2`.`tax_rate_id`
+				INNER JOIN
+					`oc_tax_rate_to_customer_group` AS `tr2cg`
+				ON
+					`tr2`.`tax_rate_id` = `tr2cg`.`tax_rate_id`
+				LEFT JOIN
+					`oc_zone_to_geo_zone` AS `z2gz`
+				ON
+					`tr2`.`geo_zone_id` = `z2gz`.`geo_zone_id`
+				WHERE
+					`tr1`.`tax_class_id` = `p`.`tax_class_id` AND
+					`tr2`.`type` = 'P' AND
+					( (
+			`tr1`.`based` = 'store' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'payment' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'shipping' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) ) AND
+					`tr2cg`.`customer_group_id` = 1
+			)
+		, 0) / 100 ) + IFNULL(
+			(
+				SELECT
+					SUM(`tr2`.`rate`)
+				FROM
+					`oc_tax_rule` AS `tr1`
+				LEFT JOIN
+					`oc_tax_rate` AS `tr2`
+				ON
+					`tr1`.`tax_rate_id` = `tr2`.`tax_rate_id`
+				INNER JOIN
+					`oc_tax_rate_to_customer_group` AS `tr2cg`
+				ON
+					`tr2`.`tax_rate_id` = `tr2cg`.`tax_rate_id`
+				LEFT JOIN
+					`oc_zone_to_geo_zone` AS `z2gz`
+				ON
+					`tr2`.`geo_zone_id` = `z2gz`.`geo_zone_id`
+				WHERE
+					`tr1`.`tax_class_id` = `p`.`tax_class_id` AND
+					`tr2`.`type` = 'F' AND
+					( (
+			`tr1`.`based` = 'store' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'payment' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'shipping' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) ) AND
+					`tr2cg`.`customer_group_id` = 1
+			)
+		, 0) ) * 1) AS `mf_price`,( ( 
+			IFNULL( (SELECT `price` FROM `oc_product_special` AS `ps` WHERE `ps`.`product_id` = `p`.`product_id` AND `ps`.`customer_group_id` = '1' AND ((`ps`.`date_start` = '0000-00-00' OR `ps`.`date_start` < NOW()) AND (`ps`.`date_end` = '0000-00-00' OR `ps`.`date_end` > NOW())) ORDER BY `ps`.`priority` ASC, `ps`.`price` ASC LIMIT 1), IFNULL( (SELECT `price` FROM `oc_product_discount` AS `pd2` WHERE `pd2`.`product_id` = `p`.`product_id` AND `pd2`.`customer_group_id` = '1' AND `pd2`.`quantity` = '1' AND ((`pd2`.`date_start` = '0000-00-00' OR `pd2`.`date_start` < NOW()) AND (`pd2`.`date_end` = '0000-00-00' OR `pd2`.`date_end` > NOW())) ORDER BY `pd2`.`priority` ASC, `pd2`.`price` ASC LIMIT 1), `p`.`price` ) )
+		 * ( 1 + IFNULL(
+			(
+				SELECT
+					SUM(`tr2`.`rate`)
+				FROM
+					`oc_tax_rule` AS `tr1`
+				LEFT JOIN
+					`oc_tax_rate` AS `tr2`
+				ON
+					`tr1`.`tax_rate_id` = `tr2`.`tax_rate_id`
+				INNER JOIN
+					`oc_tax_rate_to_customer_group` AS `tr2cg`
+				ON
+					`tr2`.`tax_rate_id` = `tr2cg`.`tax_rate_id`
+				LEFT JOIN
+					`oc_zone_to_geo_zone` AS `z2gz`
+				ON
+					`tr2`.`geo_zone_id` = `z2gz`.`geo_zone_id`
+				WHERE
+					`tr1`.`tax_class_id` = `p`.`tax_class_id` AND
+					`tr2`.`type` = 'P' AND
+					( (
+			`tr1`.`based` = 'store' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'payment' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'shipping' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) ) AND
+					`tr2cg`.`customer_group_id` = 1
+			)
+		, 0) / 100 ) + IFNULL(
+			(
+				SELECT
+					SUM(`tr2`.`rate`)
+				FROM
+					`oc_tax_rule` AS `tr1`
+				LEFT JOIN
+					`oc_tax_rate` AS `tr2`
+				ON
+					`tr1`.`tax_rate_id` = `tr2`.`tax_rate_id`
+				INNER JOIN
+					`oc_tax_rate_to_customer_group` AS `tr2cg`
+				ON
+					`tr2`.`tax_rate_id` = `tr2cg`.`tax_rate_id`
+				LEFT JOIN
+					`oc_zone_to_geo_zone` AS `z2gz`
+				ON
+					`tr2`.`geo_zone_id` = `z2gz`.`geo_zone_id`
+				WHERE
+					`tr1`.`tax_class_id` = `p`.`tax_class_id` AND
+					`tr2`.`type` = 'F' AND
+					( (
+			`tr1`.`based` = 'store' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'payment' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) OR (
+			`tr1`.`based` = 'shipping' AND 
+			`z2gz`.`country_id` = 220 AND (
+				`z2gz`.`zone_id` = '0' OR `z2gz`.`zone_id` = '0'
+			)
+		) ) AND
+					`tr2cg`.`customer_group_id` = 1
+			)
+		, 0) ) * 1) AS `mf_price`, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id)    WHERE `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '61' GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC ) AS `tmp`    WHERE `p`.`date_available` <= NOW() AND `p`.`status` = '1' AND `p2c`.`category_id` = '61' AND  ( `mf_price` > 99 AND `mf_price` < 944) ) AS `tmp` WHERE ( `mf_price` > 99 AND `mf_price` < 944) LIMIT 0,9 in /home/ubuntu/workspace/system/library/db/mysqli.php on line 41
+2017-02-03 20:04:38 - PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_model_catalog_product.php on line 219
+2017-02-03 20:04:39 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:04:39 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:04:39 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:04:39 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:05:09 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:05:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:05:09 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:05:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:05:09 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:05:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:05:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:05:09 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:05:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:05:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:05:31 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:05:31 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:05:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:06 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:06 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:08 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:06:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:06:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:06:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:06:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:06:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:06:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:06:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:07:51 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:07:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:07:51 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:07:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:07:51 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:07:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:07:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:07:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:08:03 - PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/system/library/session.php on line 21
+2017-02-03 20:10:13 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:10:13 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:10:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:10:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:12:04 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:12:04 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:14:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:15:08 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:15:08 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:15:08 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:15:08 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:15:08 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:15:08 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:15:08 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:15:08 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:17:09 - PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/system/library/session.php on line 21
+2017-02-03 20:17:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:17:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:51 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:17:54 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:17:54 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:17:58 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:17:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:17:58 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:17:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:17:58 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:17:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:17:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:17:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:00 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:18:58 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:19:37 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:19:37 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:21:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:21:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:25:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 86
+2017-02-03 20:25:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 86
+2017-02-03 20:26:02 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:26:02 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:21 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:26:42 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:26:42 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:27:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:27:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:28:12 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:28:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:28:12 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:28:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:28:12 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:28:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:28:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:28:12 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:28:16 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:28:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:28:16 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:28:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:28:16 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:28:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:28:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:28:16 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:29:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 84
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:25 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:25 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:30:25 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:35 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:30:35 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:41 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:30:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:30:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:05 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:10 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:14 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:20 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:20 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:20 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:20 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:20 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:23 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:28 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:28 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:28 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:28 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2017-02-03 20:43:45 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:43:45 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:43:46 - PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/system/library/session.php on line 21
+2017-02-03 20:44:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:44:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:46:11 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:11 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: default in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 24
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: price in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 25
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:46:17 - PHP Notice:  Undefined index: name in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 26
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:17 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:19 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:46:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:46:19 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:46:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:46:19 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:46:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:46:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:46:19 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:46:56 - PHP Notice:  Undefined index: path in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_controller_product_manufacturer.php on line 333
+2017-02-03 20:46:56 - PHP Notice:  Undefined index: path in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_controller_product_manufacturer.php on line 356
+2017-02-03 20:46:56 - PHP Notice:  Undefined index: path in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_controller_product_manufacturer.php on line 373
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:56 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:46:59 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:46:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:46:59 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:46:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:46:59 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:46:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:46:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:46:59 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:47:01 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:47:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:47:01 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:47:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:47:01 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:47:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:47:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:47:01 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:47:41 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:33 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:48:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:49:36 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:49:47 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:50:44 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_manufacturer_info.tpl on line 62
+2017-02-03 20:51:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:51:07 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:51:52 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:51:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:51:52 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:51:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:51:52 - PHP Notice:  Undefined index: minimum in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 48
+2017-02-03 20:51:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/catalog/view/theme/default/template/module/featured.tpl on line 49
+2017-02-03 20:51:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:51:52 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:52:24 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:52:24 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
+2017-02-03 20:56:06 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 279
+2017-02-03 20:56:06 - PHP Notice:  Undefined variable: text_loading in /home/ubuntu/workspace/vqmod/vqcache/vq2-catalog_view_theme_default_template_common_header.tpl on line 280
