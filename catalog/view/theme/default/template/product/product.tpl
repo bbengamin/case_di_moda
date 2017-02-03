@@ -5,7 +5,7 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row" id="product"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -14,7 +14,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <div class="row">
+      <div class="row" >
         
         <div class="col-sm-5 main-product-img-box">
           <div class="addit-imgs">
@@ -31,33 +31,40 @@
             <?php } ?>
             <div class='product-picker-box' id='product-picker-block'>
               <ul class='list-unstyled'>
-                <li><a href='#' id='black-product-color' class='color-pick-item'></a></li>
-                <li><a href='#' id='broun-product-color' class='color-pick-item active'></a></li>
-                <li><a href='#' id='white-product-color' class='color-pick-item'></a></li>
-                <li><a href='#' id='blue-product-color' class='color-pick-item'></a></li>
-                <li><a href='#' id='red-product-color' class='color-pick-item'></a></li>
+                <?php foreach ($options as $option) { ?>
+                  <?php if ($option['type'] == 'image') { ?>
+                  <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
+                    <label class="control-label"><?php echo $option['name']; ?></label>
+                    <div id="input-option<?php echo $option['product_option_id']; ?>">
+                      <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                      <div class="radio">
+                        <input type="radio"  id='as<?php echo $option_value['product_option_value_id']; ?>' name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
+                        <label for='as<?php echo $option_value['product_option_value_id']; ?>'>
+                          <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> <?php echo $option_value['name']; ?>
+                          <?php if ($option_value['price']) { ?>
+                          (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
+                          <?php } ?>
+                        </label>
+                      </div>
+                      <?php } ?>
+                    </div>
+                  </div>
+                  <?php } ?>
+                <?php } ?>
+              
               </ul>
             </div>
           </ul>
           <?php } ?>
         </div>
         
-        <div class="col-sm-4">
-          <div class="btn-group">
-            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
-            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
+        <div class="col-sm-4 prod-center-box">
+          <div class='product-ttl-box'>
+            <p class='prod-category-title'><?php echo $category_name; ?></p>
+            <h1><?php echo $heading_title; ?></h1>
           </div>
-          <h1><?php echo $heading_title; ?></h1>
-          <ul class="list-unstyled">
-            <?php if ($manufacturer) { ?>
-            <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
-            <?php } ?>
-            <li><?php echo $text_model; ?> <?php echo $model; ?></li>
-            <?php if ($reward) { ?>
-            <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
-            <?php } ?>
-            <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-          </ul>
+          
+          <div class='border-prod-block'>
           <?php if ($price) { ?>
           <ul class="list-unstyled">
             <?php if (!$special) { ?>
@@ -65,28 +72,14 @@
               <h2><?php echo $price; ?></h2>
             </li>
             <?php } else { ?>
-            <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
-            <li>
-              <h2><?php echo $special; ?></h2>
+            <li class='if-special-price-box'>
+              <h2 class='normal-price'><?php echo $special; ?><span class='older-price' style="text-decoration: line-through;"><?php echo $price; ?></span></h2>
+              <h2 class='saved-price'>Экономия <i><?php echo $saved; ?></i></h2>
             </li>
-            <?php } ?>
-            <?php if ($tax) { ?>
-            <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
-            <?php } ?>
-            <?php if ($points) { ?>
-            <li><?php echo $text_points; ?> <?php echo $points; ?></li>
-            <?php } ?>
-            <?php if ($discounts) { ?>
-            <li>
-              <hr>
-            </li>
-            <?php foreach ($discounts as $discount) { ?>
-            <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
             <?php } ?>
             <?php } ?>
           </ul>
-          <?php } ?>
-          <div id="product">
+          <div >
             <?php if ($options) { ?>
             <hr>
             <h3><?php echo $text_option; ?></h3>
@@ -133,24 +126,6 @@
                   <label>
                     <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]" value="<?php echo $option_value['product_option_value_id']; ?>" />
                     <?php echo $option_value['name']; ?>
-                    <?php if ($option_value['price']) { ?>
-                    (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
-                    <?php } ?>
-                  </label>
-                </div>
-                <?php } ?>
-              </div>
-            </div>
-            <?php } ?>
-            <?php if ($option['type'] == 'image') { ?>
-            <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
-              <label class="control-label"><?php echo $option['name']; ?></label>
-              <div id="input-option<?php echo $option['product_option_id']; ?>">
-                <?php foreach ($option['product_option_value'] as $option_value) { ?>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
-                    <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> <?php echo $option_value['name']; ?>
                     <?php if ($option_value['price']) { ?>
                     (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
                     <?php } ?>
@@ -224,120 +199,240 @@
               <div class="help-block" id="recurring-description"></div>
             </div>
             <?php } ?>
-            <div class="form-group">
-              <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
-              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-              <br />
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
-              <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product_id; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-quick-buy" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn">В один клик</button>
+           <input type='hidden' name='product_id' value='<?php echo $product_id; ?>'>
+           <input type='hidden' name='quantity' value='1'>
+            <div class="buttons-product-box">
+              <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product_id; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-quick-buy" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn">Купить в один клик</button>
+              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="main-add-cart-btn">Добавить в корзину</button>
+              
             </div>
-            <?php if ($minimum > 1) { ?>
-            <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
-            <?php } ?>
+            <div id='WATCH_OUT'>
+              <div class='stack-new watch-out-item'>
+                <span class='stack-new-text'>В наличии осталось</span>
+                 <span class='stack-new-number'><?php echo $rest; ?> единиц</span>
+              </div>
+              <div class='view-new watch-out-item'>
+                <span class='view-now-text'>Данный товар просматривают</span>
+                 <span class='view-now-number'><?php echo $view_now; ?> человек</span>
+              </div>
+          
+            </div>
+            
+            <div class="cassa-images-box">
+              <img src='' class='img-responsive'>
+            </div>
+            
+            <div class='buttons-product-box second-img'>
+              <img src='/catalog/view/theme/default/image/casses.jpg' class='img-responsive'>
+            </div>
+            
+            <div class="have-questions">
+              <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product_id; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-quick-buy" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn last-product-button">Есть вопросы? Закажите звонок</button>
+            </div>
+           
           </div>
-          <?php if ($review_status) { ?>
-          <div class="rating">
-            <p>
-              <?php for ($i = 1; $i <= 5; $i++) { ?>
-              <?php if ($rating < $i) { ?>
-              <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-              <?php } else { ?>
-              <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-              <?php } ?>
-              <?php } ?>
-              <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $reviews; ?></a> / <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $text_write; ?></a></p>
-            <hr>
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
-            <!-- AddThis Button END -->
           </div>
-          <?php } ?>
         </div>
         
         <div class='col-sm-3'>
           <div class="tab-pane active" id="tab-description">
-            <h3>Описание</h3>
-            <?php echo $description; ?>
+            <div class='timer-box'>
+              <div class="wr1">
+                <div class="eTimerProduct"></div>
+              </div>
+            </div>
+            <div class="manufacturer-img-box">
+              <a href='<?php echo $manufacturers; ?>'><img src='<?php echo $manufacturer_image; ?>'></a>
+            </div>
+            <div class="decript">
+              <h3>Описание</h3>
+              <?php echo $description; ?>
+            </div>
+            </div>
+            <div class='product-social'>
+              <h2>Расскажите друзьям</h2>
+              <ul class='list-unstyled list-inline'>
+                <li><a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href='#'><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href='#'><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+                <li><a href='#'><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+              </ul>
             </div>
         </div>
         
-      </div>
-      <?php if ($products) { ?>
-      <h3><?php echo $text_related; ?></h3>
-      <div class="row">
-        <?php $i = 0; ?>
-        <?php foreach ($products as $product) { ?>
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-lg-3 col-md-3 col-sm-6 col-xs-12'; ?>
-        <?php } ?>
-        <div class="<?php echo $class; ?>">
-          <div class="product-thumb transition">
-            <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-            <div class="caption">
-              <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-              <p><?php echo $product['description']; ?></p>
-              <?php if ($product['rating']) { ?>
-              <div class="rating">
-                <?php for ($i = 1; $i <= 5; $i++) { ?>
-                <?php if ($product['rating'] < $i) { ?>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                <?php } else { ?>
-                <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                <?php } ?>
-                <?php } ?>
-              </div>
-              <?php } ?>
-              <?php if ($product['price']) { ?>
-              <p class="price">
-                <?php if (!$product['special']) { ?>
-                <?php echo $product['price']; ?>
-                <?php } else { ?>
-                <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-                <?php } ?>
-                <?php if ($product['tax']) { ?>
-                <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                <?php } ?>
-              </p>
-              <?php } ?>
-            </div>
-            <div class="button-group">
-              <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
-            </div>
+        <div class='advantages-box col-sm-12'>
+          <div class='advantages-item'>
+            <img src='/catalog/view/theme/default/image/slice-3.png' class='img-responsive'>
+            <p>300%<br> соответствия</p>
+          </div>
+          <div class='advantages-item'>
+            <img src='/catalog/view/theme/default/image/slice-4.png' class='img-responsive'>
+            <p>Натуральные<br> материалы</p>
+          </div>
+          <div class='advantages-item'>
+            <img src='/catalog/view/theme/default/image/slice-5.png' class='img-responsive'>
+            <p>Сделано<br> в Италии</p>
+          </div>
+          <div class='advantages-item'>
+            <img src='/catalog/view/theme/default/image/slice-6.png' class='img-responsive'>
+            <p>Гарантия<br> возврата</p>
+          </div>
+          <div class='advantages-item'>
+            <img src='/catalog/view/theme/default/image/slice-7.png' class='img-responsive'>
+            <p>Самовывоз<br> из Москвы</p>
           </div>
         </div>
-        <?php if (($column_left && $column_right) && ($i % 2 == 0)) { ?>
-        <div class="clearfix visible-md visible-sm"></div>
-        <?php } elseif (($column_left || $column_right) && ($i % 3 == 0)) { ?>
-        <div class="clearfix visible-md"></div>
-        <?php } elseif ($i % 4 == 0) { ?>
-        <div class="clearfix visible-md"></div>
+        
+        <div class='col-sm-10 col-sm-offset-1'>
+                                <div class="left-present-box clearfix">
+                                    <div class='col-sm-7'>
+                                        <h3>Подарок за покупку</h3>
+                                        <p>Брендовый шарф или фирменная подвеска. Тебе выбирать!</p>
+                                    </div>
+                                    <div class='btn-group-present clearfix col-sm-5'>
+                                        <div class="btn-group-present-item col-sm-6">
+                                            <span class='present-old-price'>2170 руб.</span>
+                                            <span class='present-new-price'>бесплатно</span>
+                                            <a href='#'>Выбрать подарок</a>
+                                        </div>
+                                        <div class="btn-group-present-item col-sm-6">
+                                            <span class='present-old-price'>2170 руб.</span>
+                                            <span class='present-new-price'>бесплатно</span>
+                                            <a href='#'>Выбрать подарок</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+      </div>
+      <ul class="nav nav-tabs">
+        <?php if ($related_products) { ?>
+          <li class="active"><a class='active' data-toggle="tab" href="#related_products1">Другие модели бренда</a></li>
         <?php } ?>
-        <?php $i++; ?>
+        <li><span class='tab-separate'>   —   </span></li>
+        <?php if ($related_products2) { ?>
+           <li><a data-toggle="tab" href="#related_products2">Еще из категории</a></li>
         <?php } ?>
+      </ul>
+      
+      <div class="tab-content">
+      <?php if ($related_products) { ?>
+        <div id="related_products1" class="tab-pane active">
+          
+          <div class="row">
+            <?php $i = 0; ?>
+            <?php foreach ($related_products as $product) { ?>
+            <?php if ($column_left && $column_right) { ?>
+            <?php $class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'; ?>
+            <?php } elseif ($column_left || $column_right) { ?>
+            <?php $class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12'; ?>
+            <?php } else { ?>
+            <?php $class = 'col-lg-3 col-md-3 col-sm-6 col-xs-12'; ?>
+            <?php } ?>
+            <div class="<?php echo $class; ?>">
+              <div class="product-thumb">
+                
+                <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+                <div>
+                  <div class="caption">
+                    <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                    <!--<p><?php echo $product['description']; ?></p>-->
+                    <?php if ($product['rating']) { ?>
+                    <div class="rating">
+                      <?php for ($i = 1; $i <= 5; $i++) { ?>
+                      <?php if ($product['rating'] < $i) { ?>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <?php } else { ?>
+                      <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <?php } ?>
+                      <?php } ?>
+                    </div>
+                    <?php } ?>
+                    <?php if ($product['price']) { ?>
+                   <p class="price">
+                      <?php if (!$product['special']) { ?>
+                      <?php echo $product['price']; ?>
+                      <?php } else { ?>
+                      <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                      <?php } ?>
+                    </p>
+                    <?php } ?>
+                  </div>
+                  <div class="button-group">
+                    <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="">Добавить в корзину</span></button>
+                    <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product['product_id']; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-quick-buy" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn">Купить в один клик</button>
+                    <!--<button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
+                    <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php $i++; ?>
+            <?php } ?>
+          </div>
+        </div>
+      <?php } ?>
+      <?php if ($related_products2) { ?>
+      <div id="related_products2"  class="tab-pane">
+        
+        <div class="row">
+          <?php $i = 0; ?>
+          <?php foreach ($related_products2 as $product) { ?>
+          <?php if ($column_left && $column_right) { ?>
+          <?php $class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'; ?>
+          <?php } elseif ($column_left || $column_right) { ?>
+          <?php $class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12'; ?>
+          <?php } else { ?>
+          <?php $class = 'col-lg-3 col-md-3 col-sm-6 col-xs-12'; ?>
+          <?php } ?>
+          <div class="<?php echo $class; ?>">
+            <div class="product-thumb">
+              
+              <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+              <div>
+                <div class="caption">
+                  <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                  <!--<p><?php echo $product['description']; ?></p>-->
+                  <?php if ($product['rating']) { ?>
+                  <div class="rating">
+                    <?php for ($i = 1; $i <= 5; $i++) { ?>
+                    <?php if ($product['rating'] < $i) { ?>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <?php } else { ?>
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <?php } ?>
+                    <?php } ?>
+                  </div>
+                  <?php } ?>
+                  <?php if ($product['price']) { ?>
+                 <p class="price">
+                    <?php if (!$product['special']) { ?>
+                    <?php echo $product['price']; ?>
+                    <?php } else { ?>
+                    <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                    <?php } ?>
+                  </p>
+                  <?php } ?>
+                </div>
+                <div class="button-group">
+                  <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="">Добавить в корзину</span></button>
+                  <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product['product_id']; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-quick-buy" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn">Купить в один клик</button>
+                  <!--<button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
+                  <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php $i++; ?>
+          <?php } ?>
+        </div>
       </div>
       <?php } ?>
-      <?php if ($tags) { ?>
-      <p><?php echo $text_tags; ?>
-        <?php for ($i = 0; $i < count($tags); $i++) { ?>
-        <?php if ($i < (count($tags) - 1)) { ?>
-        <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>,
-        <?php } else { ?>
-        <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>
-        <?php } ?>
-        <?php } ?>
-      </p>
-      <?php } ?>
+      </div>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+
 <script type="text/javascript"><!--
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	$.ajax({
@@ -365,12 +460,6 @@ $('#button-cart').on('click', function() {
 		type: 'post',
 		data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
 		dataType: 'json',
-		beforeSend: function() {
-			$('#button-cart').button('loading');
-		},
-		complete: function() {
-			$('#button-cart').button('reset');
-		},
 		success: function(json) {
 			$('.alert, .text-danger').remove();
 			$('.form-group').removeClass('has-error');
@@ -399,7 +488,7 @@ $('#button-cart').on('click', function() {
 			if (json['success']) {
 				$('.breadcrumb').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
-				$('#cart > button').html('<i class="fa fa-shopping-cart"></i> ' + json['total']);
+				$('#cart-total').html(json['total']);
 
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 
@@ -413,6 +502,17 @@ $('#button-cart').on('click', function() {
 });
 //--></script>
 <script type="text/javascript"><!--
+<?php if($timer) { ?>
+  startTimerProduct("<?php echo $timer; ?>");   
+<?php } ?>
+
+function startTimerProduct(time){
+	$(".eTimerProduct").eTimer({
+		etType: 0, etDate: time, etTitleText: "Скидка действует:", etTitleSize: 22, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#333333", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+	});
+  $(".wr1").show();
+}
+
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -451,12 +551,6 @@ $('button[id^=\'button-upload\']').on('click', function() {
 				cache: false,
 				contentType: false,
 				processData: false,
-				beforeSend: function() {
-					$(node).button('loading');
-				},
-				complete: function() {
-					$(node).button('reset');
-				},
 				success: function(json) {
 					$('.text-danger').remove();
 
@@ -497,12 +591,6 @@ $('#button-review').on('click', function() {
 		type: 'post',
 		dataType: 'json',
 		data: $("#form-review").serialize(),
-		beforeSend: function() {
-			$('#button-review').button('loading');
-		},
-		complete: function() {
-			$('#button-review').button('reset');
-		},
 		success: function(json) {
 			$('.alert-success, .alert-danger').remove();
 
@@ -522,7 +610,7 @@ $('#button-review').on('click', function() {
 });
 
 $(document).ready(function() {
-	$('.thumbnails').magnificPopup({
+	$('.main-product-img-box').magnificPopup({
 		type:'image',
 		delegate: 'a',
 		gallery: {

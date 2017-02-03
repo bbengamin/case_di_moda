@@ -36,7 +36,7 @@ class ControllerProductCategory extends Controller {
 		if (isset($this->request->get['limit'])) {
 			$limit = (int)$this->request->get['limit'];
 		} else {
-			$limit = $this->config->get('config_product_limit');
+			$limit = 9;// $this->config->get('config_product_limit');
 		}
 
 		$data['breadcrumbs'] = array();
@@ -120,9 +120,18 @@ class ControllerProductCategory extends Controller {
 				'text' => $category_info['name'],
 				'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'])
 			);
-
+			//var_dump($category_info);
+			
+			$candidate = $category_info['category_id'];
+			$data['top_category'] = $category_info['category_id'];
+			while ($candidate != 0) {
+				$candidate = $this->model_catalog_category->getCategory($candidate)['parent_id'];
+				$data['top_category'] = $candidate != 0 ? $candidate : $data['top_category'];
+			};
+			$data['top_category'] = $this->model_catalog_category->getCategory($data['top_category']);
+			
 			if ($category_info['image']) {
-				$data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+				$data['thumb'] = "/image/" . $category_info['image'];//$this->model_tool_image->resize($category_info['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
 			} else {
 				$data['thumb'] = '';
 			}
@@ -178,7 +187,9 @@ class ControllerProductCategory extends Controller {
 			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 
 			$results = $this->model_catalog_product->getProducts($filter_data);
-
+			
+			$data['filtered_products_amount'] = count($results);
+			
 			foreach ($results as $result) {
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
@@ -235,37 +246,58 @@ class ControllerProductCategory extends Controller {
 			}
 
 			$data['sorts'] = array();
+			
+			if($sort == "p.sort_order" && $order == "ASC"){
+				$data['sorts']['default'] = array(
+					'text'  => $this->language->get('text_default'),
+					'value' => 'p.sort_order-DESC',
+					'view' => 'up',
+					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=DESC' . $url)
+				);
+			}else {
+				$data['sorts']['default'] = array(
+					'text'  => $this->language->get('text_default'),
+					'value' => 'p.sort_order-ASC',
+					'view' => 'down',
+					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+				);
+			}
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_default'),
-				'value' => 'p.sort_order-ASC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
-			);
+			if($sort == "pd.name" && $order == "ASC"){
+				$data['sorts']['name'] = array(
+					'text'  => $this->language->get('text_name_desc'),
+					'value' => 'pd.name-DESC',
+					'view' => 'up',
+					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+				);
+			} else {
+				$data['sorts']['name'] = array(
+					'text'  => $this->language->get('text_name_asc'),
+					'value' => 'pd.name-ASC',
+					'view' => 'down',
+					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+				);
+			}
+			
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_asc'),
-				'value' => 'pd.name-ASC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
-			);
+			if($sort == "p.price" && $order == "ASC"){
+				$data['sorts']['price'] = array(
+					'text'  => $this->language->get('text_price_desc'),
+					'value' => 'p.price-DESC',
+					'view' => 'up',
+					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+				);
+			}else{
+				$data['sorts']['price'] = array(
+					'text'  => $this->language->get('text_price_asc'),
+					'value' => 'p.price-ASC',
+					'view' => 'down',
+					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+				);
+			}
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_desc'),
-				'value' => 'pd.name-DESC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
-			);
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_asc'),
-				'value' => 'p.price-ASC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
-			);
-
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_desc'),
-				'value' => 'p.price-DESC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
-			);
-
+		
 			if ($this->config->get('config_review_status')) {
 				$data['sorts'][] = array(
 					'text'  => $this->language->get('text_rating_desc'),

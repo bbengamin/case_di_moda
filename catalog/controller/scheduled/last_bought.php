@@ -11,6 +11,7 @@ class ControllerScheduledLastBought extends Controller {
         
         $data = array();
         $data['brand'] = $product['manufacturer'];
+        $data['manufacturer_id'] = $product['manufacturer_id'];
         $data['product'] = $product['name'];
         $data['price'] = $product['price'];
         $cities = explode(',', $this->config->get('config_last_bought_locations'));

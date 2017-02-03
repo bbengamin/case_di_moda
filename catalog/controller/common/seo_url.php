@@ -80,7 +80,29 @@ class ControllerCommonSeoUrl extends Controller {
 
 		foreach ($data as $key => $value) {
 			if (isset($data['route'])) {
-				if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+				if (($data['route'] == 'product/product' && $key == 'product_id')) {
+					
+					$product_url = "";
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_to_category WHERE `product_id` = '" . $data['product_id'] . "'");
+	
+					if($query->row['category_id'] != "0"){
+						$paa = $this->db->query("SELECT * FROM `oc_category_path` WHERE `category_id`= " . $query->row['category_id'] . " ORDER BY level");
+	
+						$path = '';
+	
+			            foreach ($paa->rows as $path_id) {
+							$query_c = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'category_id=" . (int)$path_id['path_id'] . "'");
+							if ($query_c->num_rows && $query_c->row['keyword']) {
+								$product_url .= '/' . $query_c->row['keyword'];
+							}
+						}
+						
+						$product_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'product_id=" . (int) $data['product_id'] . "'");
+						
+						$product_url .= '/' . $product_query->row['keyword'];
+			            return $url_info['scheme'] . '://' . $url_info['host'] . (isset($url_info['port']) ? ':' . $url_info['port'] : '') . str_replace('/index.php', '', $url_info['path']) . $product_url;
+					}
+				} else if ((($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
 					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
 
 					if ($query->num_rows && $query->row['keyword']) {

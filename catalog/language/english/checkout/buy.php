@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']    = 'Shopping Cart / Checkout';
+$_['heading_title']    = 'Корзина заказов / Оформление';
 
 // Text
 $_['text_success']     = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">shopping cart</a>!';

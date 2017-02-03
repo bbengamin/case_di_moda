@@ -30,16 +30,12 @@
         <?php } ?>
         </div><div id="content" class="<?php echo $class; ?>">
             <?php echo $content_top; ?>
-            <h1><?php echo $heading_title; ?>
-                <?php if ($weight) { ?>
-                    &nbsp;(<?php echo $weight; ?>)
-                <?php } ?>
-            </h1>
+            
             <div class='icons-progress'>
-                <span classs="step active" id='step1'></span>
-                <span classs="step" id='step2'></span>
-                <span classs="step" id='step3'></span>
-                <span classs="step" id='step4'></span>
+                <span class="step active" id='step1'></span>
+                <span class="step" id='step2'></span>
+                <span class="step" id='step3'></span>
+                <span class="step" id='step4'></span>
             </div>
             <div class='tabs' id="checkout-form">
                 <div data-step='step1' class='tab step1 active'>    
@@ -48,60 +44,59 @@
                     <table class="table" id='cart-load'>
                         <thead>
                             <tr>
-                                <td class="text-center"><?php echo $column_image; ?></td>
-                                <td class="text-left"><?php echo $column_name; ?></td>
-                                <td class="text-left"><?php echo $column_model; ?></td>
-                                <td class="text-left"><?php echo $column_quantity; ?></td>
-                                <td class="text-right"><?php echo $column_price; ?></td>
-                                <td class="text-right"><?php echo $column_total; ?></td>
+                                <td class="text-left crt-img-column">Товар</td>
+                                <td class="text-center crt-name-column"></td>
+                                <td class="text-center crt-model-column">Цвет</td>
+                                <td class="text-center crt-model-column">Размер</td>
+                                <td class="text-center "><?php echo $column_price; ?></td>
+                                <td class="text-center crt-qua-column"><?php echo $column_quantity; ?></td>
+                                
+                                <td class="text-center crt-total-column"><?php echo $column_total; ?></td>
+                                <td class="text-center"></td>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($products as $product) { ?>
                                 <tr>
-                                    <td class="text-center"><?php if ($product['thumb']) { ?>
+                                    <td class="text-center crt-img-column"><?php if ($product['thumb']) { ?>
                                             <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
-                                        <?php } ?></td>
-                                    <td class="text-left"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+                                        <?php } ?>
+                                        </td>
+                                    <td class="text-left crt-name-column"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
                                         <?php if (!$product['stock']) { ?>
                                             <span class="text-danger">***</span>
                                         <?php } ?>
-                                        <?php if ($product['option']) { ?>
-                                            <?php foreach ($product['option'] as $option) { ?>
-                                                <br />
-                                                <small><?php echo $option['name']; ?>: <?php echo $option['value']; ?></small>
-                                            <?php } ?>
-                                        <?php } ?>
-                                        <?php if ($product['reward']) { ?>
-                                            <br />
-                                            <small><?php echo $product['reward']; ?></small>
-                                        <?php } ?>
-                                        <?php if ($product['recurring']) { ?>
-                                            <br />
-                                            <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
-                                        <?php } ?></td>
-                                    <td class="text-left"><?php echo $product['model']; ?></td>
+                                    </td>
+                                    <td class="text-left"><img src='<?php echo $product['color']; ?>'> </td>
+                                     <td class="text-center"><?php echo $product['size']; ?></td>
+                                    
+                                    <td class="text-center crt-price-column">
+                                        <?php if($product['price2']) { ?>
+                                            <P class='old-prc'><?php echo $product['price']; ?></P>
+                                            <P class='new-prc'><?php echo $product['price2']; ?></P>
+                                        <?php } else{ ?> 
+                                            <P class='new-prc'><?php echo $product['price']; ?></p>
+                                        <?php } ?> 
+                                    </td>
                                     <td class="text-left">
-                                        <div class="input-group btn-block" style="max-width: 200px;">
+                                        <div class="input-group btn-block qua-box-main" style="max-width: 200px;">
                                          <div class='minus'>-</div>
-                                            <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control" />
+                                            <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="" />
                                         <div class='plus'>+</div>
-                                            <span class="input-group-btn">
-                                                <button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button>
-                                            </span>
+                                            
                                         </div>
                                     </td>
-                                    <td class="text-right"><?php echo $product['price']; ?></td>
-                                    <td class="text-right"><?php echo $product['total']; ?></td>
+                                    <td class="text-center crt-ttl-box"><?php echo $product['total']; ?></td>
+                                    <td class="text-center crt-remoo-box"><button type="button" data-toggle="tooltip"  class="" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times"></i></button></td>
                                 </tr>
                             <?php } ?>
                           
-                            <?php $total = end($totals);  ?>
+                            <!-- <?php $total = end($totals);  ?>
                             <tr class="total-item">
                                 <td colspan="4" style="border:none;"> </td>
-                                <td class="text-right"><strong><?php echo $total['title']; ?>:</strong></td>
-                                <td class="text-right"><?php echo $total['text']; ?></td>
-                            </tr>
+                                <td class="text-center"><strong><?php echo $total['title']; ?>:</strong></td>
+                                <td class="text-center"><?php echo $total['text']; ?></td>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -112,15 +107,15 @@
                 <p><?php echo $text_next_choice; ?></p>
                 <div class="panel-group" id="accordion"><?php echo $voucher; ?><?php echo $reward; ?><?php echo $shipping; ?></div>
             <?php } ?>
-            <?php echo $coupon; ?>
+           <?php /*echo $coupon;*/ ?> 
             
-            <a href='/'>Прододжить покупки</a>
+            <a class='buy-mores' href='/'>Прододжить покупки</a>
             <a class='next-step' data-step='step2'>Дальше</a>
             </div>
             <div data-step='step2' class='tab step2'>
             <h2 class="text-center h1" id="checkout-f"><?php echo $settings['buy_h2'.$lang]; ?></h2>
             <br />
-            <div class="row" >
+            <div class="row inputs-steps-wrap" >
                 <?php if($settings['buy_shipping_select']){ ?>
                 <div class="form-group">
                     <div id="shipping_methods"></div>
@@ -129,7 +124,7 @@
                     <div class="hidden"><input type="radio" name="shipping_method" value="flat.flat" checked="checked"></div>
                 <?php } ?>
                 <br />
-                <div class="<?php echo $settings['buy_form_design']?'col-sm-6 col-sm-offset-3':'col-sm-6' ?>">
+                <div class="inputs-second-step-wrap">
                     <?php if($settings['buy_form_headings']){ ?>
                     <div class="form-group">
                         <h2><span class="label label-primary">1</span> <?php echo $settings['buy_heading_1'.$lang]; ?></h2>
@@ -153,6 +148,7 @@
                             <?php } ?>
                         <?php } ?>
                     </div>
+                    <div class='col-sm-6'>
                     <?php if($settings['buy_firstname_status']){ ?>
                     <div class="form-group<?php if($settings['buy_firstname_required']){ ?> required<?php } ?>">
                         <label class="control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
@@ -177,6 +173,9 @@
                         <input type="text" name="telephone" value="<?php echo $telephone; ?>" placeholder="<?php echo $entry_telephone; ?>" id="input-payment-telephone" class="form-control" />
                     </div>
                     <?php } ?>
+                    </div>
+                    
+                    <div class='col-sm-6'>
                     <?php if($settings['buy_fax_status']){ ?>
                     <div class="form-group<?php if($settings['buy_fax_required']){ ?> required<?php } ?>">
                         <label class="control-label" for="input-payment-fax"><?php echo $entry_fax; ?></label>
@@ -260,6 +259,7 @@
                         <input type="text" name="address_2" value="<?php echo $address_2; ?>" placeholder="<?php echo $entry_address_2; ?>" id="input-payment-address-2" class="form-control" />
                     </div>
                     <?php } ?>
+                  </div>
                   
                     <?php if($settings['buy_form_headings'] && ($settings['buy_shipping_select'] || $settings['buy_payment_select'])) { ?>
                     <div class="form-group">
@@ -297,7 +297,7 @@
             </div>
             <div data-step='step4' class='tab step4'>
             
-            <div class='col-sm-6'>
+            <div class='col-sm-4'>
                 <span>DELIVERY</span>
                 <div class='ship-st4'>
                     
@@ -310,67 +310,111 @@
                     
                 </div>
             </div>
-            <div class='col-sm-6'>
-                <table class="table">
+            <div class='col-sm-8'>
+                <table class="table" id='cart-load'>
                         <thead>
                             <tr>
-                                <td class="text-center"><?php echo $column_image; ?></td>
-                                <td class="text-left"><?php echo $column_name; ?></td>
-                                <td class="text-left"><?php echo $column_model; ?></td>
-                                <td class="text-left"><?php echo $column_quantity; ?></td>
-                                <td class="text-right"><?php echo $column_price; ?></td>
-                                <td class="text-right"><?php echo $column_total; ?></td>
+                                <td class="text-left crt-img-column">Изображение</td>
+                                <td class="text-center crt-name-column"></td>
+                                <td class="text-center crt-model-column">Цвет</td>
+                                <td class="text-center crt-model-column">Размер</td>
+                                <td class="text-center "><?php echo $column_price; ?></td>
+                                <td class="text-center crt-qua-column"><?php echo $column_quantity; ?></td>
+                                <td class="text-center crt-total-column"><?php echo $column_total; ?></td>
+                                <td class="text-center"></td>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($products as $product) { ?>
                                 <tr>
-                                    <td class="text-center"><?php if ($product['thumb']) { ?>
+                                    <td class="text-center crt-img-column"><?php if ($product['thumb']) { ?>
                                             <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
-                                        <?php } ?></td>
-                                    <td class="text-left"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+                                        <?php } ?>
+                                        </td>
+                                    <td class="text-left crt-name-column"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
                                         <?php if (!$product['stock']) { ?>
                                             <span class="text-danger">***</span>
                                         <?php } ?>
-                                        <?php if ($product['option']) { ?>
-                                            <?php foreach ($product['option'] as $option) { ?>
-                                                <br />
-                                                <small><?php echo $option['name']; ?>: <?php echo $option['value']; ?></small>
-                                            <?php } ?>
-                                        <?php } ?>
-                                        <?php if ($product['reward']) { ?>
-                                            <br />
-                                            <small><?php echo $product['reward']; ?></small>
-                                        <?php } ?>
-                                        <?php if ($product['recurring']) { ?>
-                                            <br />
-                                            <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
-                                        <?php } ?></td>
-                                    <td class="text-left"><?php echo $product['model']; ?></td>
-                                    <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
-                                            <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control" />
-                                            <span class="input-group-btn">
-                                                <button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
-                                                <button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button></span></div></td>
-                                    <td class="text-right"><?php echo $product['price']; ?></td>
-                                    <td class="text-right"><?php echo $product['total']; ?></td>
+                                    </td>
+                                    <td class="text-left"><img src='<?php echo $product['color']; ?>'> </td>
+                                     <td class="text-left"><?php echo $product['size']; ?></td>
+                                    
+                                    <td class="text-center crt-price-column">
+                                        <?php if($product['price2']) { ?>
+                                            <P class='old-prc'><?php echo $product['price']; ?></P>
+                                            <P class='new-prc'><?php echo $product['price2']; ?></P>
+                                        <?php } else{ ?> 
+                                            <P class='new-prc'><?php echo $product['price']; ?></p>
+                                        <?php } ?> 
+                                    </td>
+                                    <td class="text-left">
+                                        <div class="input-group btn-block qua-box-main" style="max-width: 200px;">
+                                         <div class='minus'>-</div>
+                                            <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="" />
+                                        <div class='plus'>+</div>
+                                            
+                                        </div>
+                                    </td>
+                                    <td class="text-center"><?php echo $product['total']; ?></td>
+                                    <td class="text-center crt-remoo-box"><button type="button" data-toggle="tooltip"  class="" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times"></i></button></td>
                                 </tr>
                             <?php } ?>
+                          
                             <?php $total = end($totals);  ?>
                             <tr class="total-item">
                                 <td colspan="4" style="border:none;"> </td>
-                                <td class="text-right"><strong><?php echo $total['title']; ?>:</strong></td>
-                                <td class="text-right"><?php echo $total['text']; ?></td>
+                                <td class="text-center"><strong><?php echo $total['title']; ?>:</strong></td>
+                                <td class="text-center"><?php echo $total['text']; ?></td>
                             </tr>
                         </tbody>
                     </table>
                     
             </div>
-            <strong><?php echo $total['title']; ?>:</strong><?php echo $total['text']; ?>
+            <!--<strong><?php echo $total['title']; ?>:</strong><?php echo $total['text']; ?>-->
             <a class='prev-step' data-step='step3'>Назад</a>
             <input type="button" value="<?php echo $button_order; ?>" id="button-order" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-success" />
             </div>
 
+            <div class='present-box'>
+                <div class="container">
+                    <div class="row">
+                        <div class="present-inner-box clearfix">
+                            <div class='col-sm-8'>
+                                <div class="left-present-box clearfix">
+                                    <div class='col-sm-7'>
+                                        <h3>Подарок за покупку</h3>
+                                        <p>Брендовый шарф или фирменная подвеска. Тебе выбирать!</p>
+                                    </div>
+                                    <div class='btn-group-present clearfix col-sm-5'>
+                                        <div class="btn-group-present-item col-sm-6">
+                                            <span class='present-old-price'>2170 руб.</span>
+                                            <span class='present-new-price'>бесплатно</span>
+                                            <a href='#'>Выбрать подарок</a>
+                                        </div>
+                                        <div class="btn-group-present-item col-sm-6">
+                                            <span class='present-old-price'>2170 руб.</span>
+                                            <span class='present-new-price'>бесплатно</span>
+                                            <a href='#'>Выбрать подарок</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-4'>
+                                <div class="right-present-box">
+                                    <div>
+                                        <p>Самовывоз<br> из Москва - Сити</p>
+                                    </div>
+                                    <div class='btn-group-present'>
+                                        <div class="btn-group-present-item">
+                                            <a href='#' class='present-read-more'>Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -406,7 +450,7 @@
        
        $(".tab").removeClass("active");
        
-       $(".icons-progress #" + step).removeClass("active");
+       $(".icons-progress #step" + (parseInt(step.substring(4,5)) +1)).removeClass("active");
        
        $(".tab." + step).addClass("active");
     });
@@ -452,11 +496,7 @@ cart.remove = function(key) {
             type: 'post',
             data: 'key=' + key,
             dataType: 'json',
-            beforeSend: function() {
-                $('#cart > button').button('loading');
-            },
             success: function(json) {
-                $('#cart > button').button('reset');
 
                 $('#cart-total').html(json['total']);
 
@@ -549,12 +589,6 @@ cart.remove = function(key) {
             type: 'post',
             data: $('#checkout-form input[type=\'text\'], #checkout-form input[type=\'checkbox\']:checked, #checkout-form select, #checkout-form input[type=\'radio\']:checked, #checkout-form textarea, #checkout-form input[type=\'hidden\']'),
             dataType: 'json',
-            beforeSend: function() {
-                $('#button-order').button('loading');
-            },
-            complete: function() {
-                $('#button-order').button('reset');
-            },
             success: function(json) {
                 $('.error').remove();
                 $('.warning').remove();
@@ -566,6 +600,11 @@ cart.remove = function(key) {
                     $('#checkout-form .text-danger').remove();
                     if (json['error']['warning']) {
                         addWarning(json['error']['warning']);
+                    }
+                    
+                    if(json['error']){
+                        $('.prev-step[data-step="step3"]').trigger("click");
+                        $('.prev-step[data-step="step2"]').trigger("click");
                     }
                     if (json['error']['firstname']) {
                         addError('#input-payment-firstname', json['error']['firstname']);

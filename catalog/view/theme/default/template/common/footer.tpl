@@ -37,21 +37,21 @@
           <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
         </ul>
       </div>-->
-      <div class="footer-menu">
+      <div class="footer-menu clearfix">
         <ul class="nav navbar-nav">
-          <li><a href="http://site15.studio-luck.ru/index.php?route=product/category&amp;path=60">Женские аксессуары</a></li>
-          <li><a href="http://site15.studio-luck.ru/index.php?route=product/category&amp;path=59">Женские Сумки</a></li>
-          <li><a href="http://site15.studio-luck.ru/index.php?route=product/category&amp;path=62">Мужские аксессуары</a></li>
-          <li><a href="http://site15.studio-luck.ru/index.php?route=product/category&amp;path=61">Мужские сумки</a></li>
+          <?php foreach($categories as $category) { ?>
+            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+          <?php } ?>
           <li class="pull-right pay-systems">
             <span><img src="/catalog/view/theme/default/image/visa-card.png" class="img-responsive"></span>
             <span><img src="/catalog/view/theme/default/image/mast-card.png" class="img-responsive"></span>
           </li>
         </ul>
       </div>
-    </div>
-    <hr>
+      <hr>
     <p class="cprt">© 2016 <a href="http://CasaDiMora.com">CasaDiMora.com</a> Все права защищены. Информация на сайте не является публичной офертой</p>
+    </div>
+    
   </div>
   <?php echo $last_bought ?>
   <!-- Modal callback -->
@@ -64,7 +64,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="modal-form">
             <form id="modal-call-back-form">
-              <p>Заполните форму и мы с вами свяжемся</p>
+              <p>Заказать звонок</p>
               <div class="input-field">
                 <input type="text" name="name" required="required" placeholder="Имя">
               </div>
@@ -83,6 +83,31 @@
     </div>
   </div>
 
+<div id="myModal-activate-special" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-form">
+            <form id="activate-for-form-form">
+              <p>Активируй скидку 20%, которая будет действительна только в течение 60 минут!</p>
+              <div class="input-field">
+                <button type="submit" id="activate-special-btn">Активировать</button>
+              </div>
+              <div class="input-field">
+                <button type="submit" id="go-to-login-button" >Войти в личный кабинет</button>
+              </div>
+            </form>
+            <div style="display: none">Поздравляем! Вы активировали скидку 20%, которая будет действительна только в течение 60 минут!</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Modal quick-buy -->
   <div id="myModal-quick-buy" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -93,7 +118,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="modal-form">
             <form id="modal-quick-buy-form">
-              <p>Заполните форму и мы с вами свяжемся</p>
+              <p>Купить в один клик</p>
               <div class="input-field">
                 <input type="text" name="name" required="required" placeholder="Имя">
               </div>
@@ -111,6 +136,31 @@
 
     </div>
   </div>
+  
+  <div id="myModal-register-for-special" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-form">
+            <form id="modal-register-for-special-form">
+              <p>Зарегистрируйся, чтобы получить скидку 20%.</p>
+            
+              <div class="input-field">
+                <button type="submit" id="register-for-special-button">Зарегистрироваться</button>
+              </div>
+            </form>
+            <div style="display: none">Спасибо, закончите регистрацию чтобы получить скидку 20%</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
 
   <!-- Fast authorization modal -->
   <div class="modal fade" id="authorization" tabindex="-1" role="dialog" aria-labelledby="authorization-Label" aria-hidden="true">
@@ -135,7 +185,7 @@
             </div>
           </form>
           <div class="go-to-register">
-            <a href="#">Зарегистрироваться</a>
+            <a>Зарегистрироваться</a>
           </div>
           <div class="forgot-pass">
             <a href="#">Забыли пароль?</a>
@@ -176,20 +226,70 @@
             </div>
           </form>
           <div class="go-to-authorization">
-            <a href="#">Авторизация</a>
+            <a>Авторизация</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  <div class="wr1">
+<div class="eTimer"></div></div>
 </footer>
+<script>
+  $(document).ready(function(){
+      <?php if($showFormTrySale) { ?>
+        setTimeout(showTrySale, 30000);
+      <?php } ?>
+      <?php if($showFormRegister) { ?>
+        setTimeout(showRegister, 30000);
+      <?php } ?>
+      
+      <?php if($timer) { ?>
+        startTimer("<?php echo $timer; ?>");   
+      <?php } ?>
+      
+      function showTrySale(){
+          $('#myModal-activate-special').modal('show');
+      }
+      
+      function showRegister(){
+          $('#myModal-register-for-special').modal('show');
+      }
+      
+      function reloadPage(){
+          location.reload();
+      }
+      
+      $('#activate-for-form-form').on('submit',function(e){
+          e.preventDefault();
+          $.get('index.php?route=api/activate',function(data){
+             json = JSON.parse(data);
+             startTimer(json.timer);   
+             setTimeout(reloadPage,1000);
+             $('#activate-for-form-form').hide();
+             $('#activate-for-form-form').next().show();
+          });
+          return false;
+      });
+      function startTimer(time){
+    	/*	$(".eTimer").eTimer({
+    			etType: 0, etDate: time, etTitleText: "Скидка действует", etTitleSize: 22, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#333333", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+    		});
+        $(".wr1").show();*/
+      }
+      
+      $('#go-to-login-button').on('click',function(e){
+        e.preventDefault();
+        $('#authorization').modal('show');
+        return false;
+      });
+      $('#register-for-special-button').on('click',function(e){
+        e.preventDefault();
+        $('#registration').modal('show');
+        return false;
+      });
+      
 
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
-
-<!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
-
+  });
+</script>
 </body></html>

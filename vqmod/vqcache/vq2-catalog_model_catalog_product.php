@@ -192,7 +192,8 @@ class ModelCatalogProduct extends Model {
 					if( ! empty( $this->request->get['mfp'] ) || ( NULL != ( $mfSettings = $this->config->get('mega_filter_settings') ) && ! empty( $mfSettings['in_stock_default_selected'] ) ) ) {
 						if( empty( $data['mfp_disabled'] ) ) {
 							$this->load->model( 'module/mega_filter' );
-					
+					var_dump("filter");
+					die;
 							$sql = MegaFilterCore::newInstance( $this, $sql )->getSQL( __FUNCTION__ );
 						}
 					}

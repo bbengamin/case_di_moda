@@ -11,7 +11,7 @@
 	$buttons = array( 'top' => array(), 'bottom' => array() );
 	
 	if( ! empty( $settings['show_reset_button'] ) ) {
-		$buttons['bottom'][] = sprintf( $button_temp, 'mfilter-button-reset', '<i class="mfilter-reset-icon"></i>' . $text_reset_all );
+		$buttons['bottom'][] = sprintf( $button_temp, 'mfilter-button-reset', '' . $text_reset_all );
 	}
 	
 	if( ! empty( $settings['show_top_reset_button'] ) ) {
@@ -22,11 +22,11 @@
 		$place_button = explode( '_', $settings['place_button'] );
 	
 		if( in_array( 'top', $place_button ) ) {
-			$buttons['top'][] = sprintf( $button_temp, 'btn btn-primary btn-xs', $text_button_apply );
+			$buttons['top'][] = sprintf( $button_temp, '', $text_button_apply );
 		}
 		
 		if( in_array( 'bottom', $place_button ) ) {
-			$buttons['bottom'][] = sprintf( $button_temp, 'btn btn-primary btn-xs', $text_button_apply );
+			$buttons['bottom'][] = sprintf( $button_temp, '', $text_button_apply );
 		}
 	}
 	
@@ -45,6 +45,9 @@
 	<?php if( $heading_title ) { ?>
 		<h3 class="box-heading"><?php echo $heading_title; ?></h3>
 	<?php } ?>
+	<div id='filtered_products_amount'>
+		
+	</div>
 	<div class="box-content mfilter-content<?php echo empty( $settings['calculate_number_of_products'] ) || empty( $settings['show_number_of_products'] ) ? ' mfilter-hide-counter' : ''; ?>">
 		<?php echo $buttons['top']; ?>
 		<ul>
@@ -95,7 +98,7 @@
 						?>">
 							<div class="mfilter-heading-content">
 								<div class="mfilter-heading-text"><span><?php echo $filter['name']; ?></span></div>
-								<i class="mfilter-head-icon"></i>
+								
 							</div>
 						</div>
 					<?php } ?>

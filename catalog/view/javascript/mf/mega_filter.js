@@ -2305,6 +2305,7 @@ MegaFilter.prototype = {
 		} else {
 			self.reload();
 		}
+		refreshFilteredAmount();
 	},
 	
 	_render: function( html, json, history ) {
@@ -2370,7 +2371,7 @@ MegaFilter.prototype = {
 				return false;
 			});
 		}
-		
+		$('#filtered_products_amount').text($('#filtered_products_input').val());
 		self.afterRender( self._lastResponse, html, json );
 	},
 	
@@ -2378,7 +2379,8 @@ MegaFilter.prototype = {
 	
 	beforeRender: function(){},
 	
-	afterRender: function(){},
+	afterRender: function(){
+	},
 	
 	eachInstances: function( fn, skipCurrent ) {
 		for( var i = 0; i < MegaFilterINSTANCES.length; i++ ) {

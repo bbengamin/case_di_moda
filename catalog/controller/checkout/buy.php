@@ -125,14 +125,15 @@ class ControllerCheckoutBuy extends Controller {
 
             $this->load->model('tool/image');
             $this->load->model('tool/upload');
+            $this->load->model('catalog/product');
 
             $data['products'] = array();
 
             $products = $this->cart->getProducts();
-
+            
             foreach ($products as $product) {
                 $product_total = 0;
-
+                //var_dump($product);
                 foreach ($products as $product_2) {
                     if ($product_2['product_id'] == $product['product_id']) {
                         $product_total += $product_2['quantity'];
@@ -150,8 +151,18 @@ class ControllerCheckoutBuy extends Controller {
                 }
 
                 $option_data = array();
-
+                $color = false;
+                $size = false;
                 foreach ($product['option'] as $option) {
+                    if ($option['type'] == 'image') {
+                        $img_q = $this->db->query("SELECT * FROM oc_option_value WHERE option_value_id=" . $option['option_value_id']);
+                        $color = $this->model_tool_image->resize($img_q->row['image'], 19,19);
+                    }
+                    
+                    if ($option['option_id'] == '14') {
+                        $size = $option['value'];
+                    }
+                        
                     if ($option['type'] != 'file') {
                         $value = $option['value'];
                     } else {
@@ -175,6 +186,14 @@ class ControllerCheckoutBuy extends Controller {
                     $price = $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')));
                 } else {
                     $price = false;
+                }
+                
+                $product_info = $this->model_catalog_product->getProduct($product['product_id']);
+                  // Display prices
+                if ($product_info['special']) {
+                    $price2= $this->currency->format($this->tax->calculate($product_info['special'], $product['tax_class_id'], $this->config->get('config_tax')));
+                } else {
+                    $price2 = false;
                 }
 
                 // Display prices
@@ -209,6 +228,8 @@ class ControllerCheckoutBuy extends Controller {
                 $data['products'][] = array(
                     'key' => $product['cart_id'],
                     'thumb' => $image,
+                    'color' => $color,
+                    'size' => $size,
                     'name' => $product['name'],
                     'model' => $product['model'],
                     'option' => $option_data,
@@ -217,6 +238,7 @@ class ControllerCheckoutBuy extends Controller {
                     'stock' => $product['stock'] ? true : !(!$this->config->get('config_stock_checkout') || $this->config->get('config_stock_warning')),
                     'reward' => ($product['reward'] ? sprintf($this->language->get('text_points'), $product['reward']) : ''),
                     'price' => $price,
+                    'price2' => $price2,
                     'total' => $total,
                     'href' => $this->url->link('product/product', 'product_id=' . $product['product_id'])
                 );

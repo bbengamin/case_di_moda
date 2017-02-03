@@ -1,8 +1,32 @@
 <?php
 class ControllerCommonFooter extends Controller {
 	public function index() {
+/*		unset($this->session->data['activate']);
+		unset($this->session->data['activate_date']);*/
+	
+		if($this->customer->isLogged()){
+			$data['timer'] = false;
+			$data['showFormTrySale'] = false;
+			$data['showFormRegister'] = false;
+		}else{
+			if(isset($this->session->data['activate']) && $this->session->data['activate']){
+				if($this->session->data['activate_date'] > strtotime('now')) {
+					$data['timer'] = $this->session->data['activate'];
+					$data['showFormRegister'] = false;
+					$data['showFormTrySale'] = false;
+				}else{
+					$data['showFormRegister'] = true;
+					$data['timer'] = false;
+					$data['showFormTrySale'] = false;
+				}
+			}else{
+				$data['showFormTrySale'] = true;
+				$data['showFormRegister'] = false;
+				$data['timer'] = false;
+			}
+		}
+		
 		$this->load->language('common/footer');
-
 		$data['scripts'] = $this->document->getScripts('footer');
 
 		$data['text_information'] = $this->language->get('text_information');
@@ -19,6 +43,21 @@ class ControllerCommonFooter extends Controller {
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_wishlist'] = $this->language->get('text_wishlist');
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
+		
+		$this->load->model('catalog/category');
+
+		$data['categories'] = array();
+
+		$categories = $this->model_catalog_category->getCategories(0);
+
+		foreach ($categories as $category) {
+			if ($category['top']) {
+				$data['categories'][] = array(
+					'name'     => $category['name'],
+					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+				);
+			}
+		}
 
 		$this->load->model('catalog/information');
 

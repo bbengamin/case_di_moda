@@ -3,6 +3,35 @@ class ControllerProductProduct extends Controller {
 	private $error = array();
 
 	public function index() {
+	/*	$data['timer'] = false;
+		if(isset($this->session->data['activate']) && $this->session->data['activate']){
+			if($this->session->data['activate_date'] > strtotime('now')) {
+				$data['timer'] = $this->session->data['activate'];
+			}
+		}*/
+	
+		if($this->customer->isLogged()){
+			$data['timer'] = false;
+			$data['showFormTrySale'] = false;
+			$data['showFormRegister'] = false;
+		}else{
+			if(isset($this->session->data['activate']) && $this->session->data['activate']){
+				if($this->session->data['activate_date'] > strtotime('now')) {
+					$data['timer'] = $this->session->data['activate'];
+					$data['showFormRegister'] = false;
+					$data['showFormTrySale'] = false;
+				}else{
+					$data['showFormRegister'] = true;
+					$data['timer'] = false;
+					$data['showFormTrySale'] = false;
+				}
+			}else{
+				$data['showFormTrySale'] = true;
+				$data['showFormRegister'] = false;
+				$data['timer'] = false;
+			}
+		}
+		
 		$this->load->language('product/product');
 
 		$data['breadcrumbs'] = array();
@@ -18,7 +47,8 @@ class ControllerProductProduct extends Controller {
 			$path = '';
 
 			$parts = explode('_', (string)$this->request->get['path']);
-
+			
+			$chapter = $parts[0];
 			$category_id = (int)array_pop($parts);
 
 			foreach ($parts as $path_id) {
@@ -40,7 +70,7 @@ class ControllerProductProduct extends Controller {
 
 			// Set the last category breadcrumb
 			$category_info = $this->model_catalog_category->getCategory($category_id);
-
+			$data['category_name'] = $category_info['name'];
 			if ($category_info) {
 				$url = '';
 
@@ -65,6 +95,9 @@ class ControllerProductProduct extends Controller {
 					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url)
 				);
 			}
+			
+		}else{
+			$data['category_name'] = "";
 		}
 
 		$this->load->model('catalog/manufacturer');
@@ -266,10 +299,23 @@ class ControllerProductProduct extends Controller {
 			$data['product_id'] = (int)$this->request->get['product_id'];
 			$data['manufacturer'] = $product_info['manufacturer'];
 			$data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
+			$data['view_now'] = $product_info['view_now'];
+			$data['rest'] = $product_info['rest'];
+			
+			$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($product_info['manufacturer_id']);
+			$this->load->model('tool/image');
+			
+			if ($manufacturer_info && $manufacturer_info['image']) {
+				$data['manufacturer_image'] = $this->model_tool_image->resize($manufacturer_info['image'], 235, 100);
+			} else {
+				$data['manufacturer_image'] = '';
+			}
+			
 			$data['model'] = $product_info['model'];
 			$data['reward'] = $product_info['reward'];
 			$data['points'] = $product_info['points'];
 			$data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+			
 
 			if ($product_info['quantity'] <= 0) {
 				$data['stock'] = $product_info['stock_status'];
@@ -279,7 +325,7 @@ class ControllerProductProduct extends Controller {
 				$data['stock'] = $this->language->get('text_instock');
 			}
 
-			$this->load->model('tool/image');
+			
 
 			if ($product_info['image']) {
 				$data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
@@ -288,7 +334,7 @@ class ControllerProductProduct extends Controller {
 			}
 
 			if ($product_info['image']) {
-				$data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
+				$data['thumb'] = $this->model_tool_image->resize($product_info['image'], 367,594);
 			} else {
 				$data['thumb'] = '';
 			}
@@ -311,8 +357,10 @@ class ControllerProductProduct extends Controller {
 			}
 
 			if ((float)$product_info['special']) {
+				$data['saved'] = $this->currency->format($this->tax->calculate($product_info['price'] - $product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
 				$data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
 			} else {
+				$data['saved'] = false;
 				$data['special'] = false;
 			}
 
@@ -400,9 +448,9 @@ class ControllerProductProduct extends Controller {
 
 			$data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
 
-			$data['products'] = array();
+			
 
-			$results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+		/*	$results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
 
 			foreach ($results as $result) {
 				if ($result['image']) {
@@ -447,8 +495,116 @@ class ControllerProductProduct extends Controller {
 					'rating'      => $rating,
 					'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
 				);
-			}
+			}*/
 
+			$data['related_products'] = array();
+			$data['related_products2'] = array();
+			if(isset($category_id) && $category_id){
+				
+				$recomendet_query = $this->db->query('SELECT p2c.product_id FROM oc_product_to_category as p2c 
+							LEFT JOIN oc_product as p ON p.product_id=p2c.product_id WHERE p2c.category_id=' . $chapter . 
+							' AND p.manufacturer_id=' . $product_info['manufacturer_id'] . ' AND p.product_id!=' . $product_info['product_id'] . ' LIMIT 4');
+							
+				foreach ($recomendet_query->rows as $row) {
+					$result = $this->model_catalog_product->getProduct($row['product_id']);
+					if ($result['image']) {
+						$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+					} else {
+						$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+					}
+	
+					if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+						$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+					} else {
+						$price = false;
+					}
+	
+					if ((float)$result['special']) {
+						$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+					} else {
+						$special = false;
+					}
+	
+					if ($this->config->get('config_tax')) {
+						$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price']);
+					} else {
+						$tax = false;
+					}
+	
+					if ($this->config->get('config_review_status')) {
+						$rating = (int)$result['rating'];
+					} else {
+						$rating = false;
+					}
+	
+					$data['related_products'][] = array(
+						'product_id'  => $result['product_id'],
+						'thumb'       => $image,
+						'name'        => $result['name'],
+						'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
+						'price'       => $price,
+						'special'     => $special,
+						'tax'         => $tax,
+						'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+						'rating'      => $rating,
+						'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+					);
+				}
+				
+				$recomendet_query = $this->db->query('SELECT p2c.product_id FROM oc_product_to_category as p2c 
+							LEFT JOIN oc_product as p ON p.product_id=p2c.product_id WHERE p2c.category_id=' . $category_id . 
+							' AND p.product_id!=' . $product_info['product_id'] . ' LIMIT 4');
+							
+				foreach ($recomendet_query->rows as $row) {
+					$result = $this->model_catalog_product->getProduct($row['product_id']);
+					if ($result['image']) {
+						$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+					} else {
+						$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+					}
+	
+					if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+						$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+					} else {
+						$price = false;
+					}
+	
+					if ((float)$result['special']) {
+						$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+					} else {
+						$special = false;
+					}
+	
+					if ($this->config->get('config_tax')) {
+						$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price']);
+					} else {
+						$tax = false;
+					}
+	
+					if ($this->config->get('config_review_status')) {
+						$rating = (int)$result['rating'];
+					} else {
+						$rating = false;
+					}
+	
+					$data['related_products2'][] = array(
+						'product_id'  => $result['product_id'],
+						'thumb'       => $image,
+						'name'        => $result['name'],
+						'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
+						'price'       => $price,
+						'special'     => $special,
+						'tax'         => $tax,
+						'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+						'rating'      => $rating,
+						'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+					);
+				}
+					
+			}
+			
+			//$results = $this->db->query("SELECT * FROM " . DB_PREFIX . "product WHERE ");
+			//SELECT * FROM `oc_product` AS `p` WHERE `p`.`manufacturer_id`=5 AND NOT `p`.`product_id`=50	
 			$data['tags'] = array();
 
 			if ($product_info['tag']) {

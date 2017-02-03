@@ -10,12 +10,7 @@
             <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
             <?php } ?></td>
           <td class="text-left mini-cart-name-box"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-            <?php if ($product['option']) { ?>
-            <?php foreach ($product['option'] as $option) { ?>
-            <br />
-            - <small><?php echo $option['name']; ?> <?php echo $option['value']; ?></small>
-            <?php } ?>
-            <?php } ?>
+            
             <?php if ($product['recurring']) { ?>
             <br />
             - <small><?php echo $text_recurring; ?> <?php echo $product['recurring']; ?></small>
@@ -51,7 +46,7 @@
     </li>
     <?php } else { ?>
     <li>
-      <p class="text-center"><?php echo $text_empty; ?></p>
+      <p class="text-center epmty-catr-rext"><?php echo $text_empty; ?></p>
     </li>
     <?php } ?>
   </ul>

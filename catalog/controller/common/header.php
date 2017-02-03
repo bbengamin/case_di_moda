@@ -3,13 +3,13 @@ class ControllerCommonHeader extends Controller {
 	public function index() {
 		// Analytics
 
-        $data['header_type'] = "header1";
-		if(isset($this->request->get['route'])){
-	        if($this->request->get['route'] == 'product/product'){
+        $data['header_type'] = "header2";
+	/*	if(isset($this->request->get['route'])){
+	        if($this->request->get['route'] == 'product/product' || $this->request->get['route'] == 'checkout/buy'){
 	            $data['header_type'] = "header2";
 	        }
 		}
-
+*/
 		$this->load->model('extension/extension');
 
 		$data['analytics'] = array();
