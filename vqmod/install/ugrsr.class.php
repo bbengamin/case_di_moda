@@ -6,7 +6,7 @@
  * @package Universal Global RegEx Search/Replace
  * @author Qphoria - http://theqdomain.com/ & Jay Gilford - http://jaygilford.com/
  * @copyright Qphoria & Jay Gilford 2011
- * @version 0.3
+ * @version 0.2
  * @access public
  * 
  * @information
@@ -243,17 +243,16 @@ class UGRSR {
 	public function setPath($path) {
 		
 		// Get full real path to given path
-		if(is_executable($path)) {
-			$realpath = realpath($path) . '/';
-		} else {
-			$realpath = $path;
-		}
+		$realpath = realpath($path);
 		
 		// If path can't be found or isn't a directory throw an error
-		if(!file_exists($realpath)) {
+		if(!$realpath || !is_dir($realpath)) {
 			$this->_dbg('INVALID PATH [' . $realpath . ']');
 			return false;
 		}
+		
+		// Add trailing slash to path name
+		$realpath .= '/';
 		
 		// Set path to new value
 		$this->_dbg('NEW PATH SET [' . $realpath . ']');
