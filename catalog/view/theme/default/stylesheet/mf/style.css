@@ -295,8 +295,9 @@
 	display: table;
 	width: 100%;
 }
-.mfilter-tb-as-tr {
-	display: table-row;
+.mfilter-tb-as-tr{
+    display: inline-block;
+    width: 50%;
 }
 .mfilter-tb-as-td {
 	display: table-cell;

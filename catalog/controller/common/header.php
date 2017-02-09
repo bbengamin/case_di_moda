@@ -114,11 +114,42 @@ class ControllerCommonHeader extends Controller {
 		$this->load->model('catalog/product');
 
 		$data['categories'] = array();
-
+		$children_data = array();
+		$children2_data = array();
+		$this->load->model('catalog/manufacturer');
+		$manufacturers = $this->model_catalog_manufacturer->getManufacturers();
+		
+		foreach($manufacturers as $man){
+			$children2_data[] = array(
+				'name'  => $man['name'],
+				'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $man['manufacturer_id'])
+			);
+		}
+		
+		$children_data[] = array(
+			'children' => $children2_data,
+			'name'  => "Бренды",
+			'href'  => $this->url->link('product/manufacturer')
+		);
+		
+		$data['categories'][] = array(
+			'name'     => "Бренды",
+			'children' => $children_data,
+			'img_menu' => false,
+			'column'   => 1,
+			'href'     => $this->url->link('product/manufacturer')
+		);
 		$categories = $this->model_catalog_category->getCategories(0);
 
 		foreach ($categories as $category) {
 			if ($category['top']) {
+				
+				if ($category['img_menu']) {
+					$image = "/image/" . $category['img_menu']; //$this->model_tool_image->resize($category['img_menu'], 265,265);
+				} else {
+					$image = false;
+				}
+				
 				// Level 2
 				$children_data = array();
 
@@ -149,6 +180,7 @@ class ControllerCommonHeader extends Controller {
 				$data['categories'][] = array(
 					'name'     => $category['name'],
 					'children' => $children_data,
+					'img_menu' => $image,
 					'column'   => $category['column'] ? $category['column'] : 1,
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
 				);

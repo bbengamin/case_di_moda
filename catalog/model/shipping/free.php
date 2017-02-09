@@ -24,15 +24,15 @@ class ModelShippingFree extends Model {
 
 			$quote_data['free'] = array(
 				'code'         => 'free.free',
-				'title'        => $this->language->get('text_description'),
+				'title'        => "Забрать в нашем офисе в Москва-Сити.",
 				'cost'         => 0.00,
 				'tax_class_id' => 0,
-				'text'         => $this->currency->format(0.00)
+				'text'         => ""
 			);
 
 			$method_data = array(
 				'code'       => 'free',
-				'title'      => $this->language->get('text_title'),
+				'title'      => "Забрать в нашем офисе в Москва-Сити.",
 				'quote'      => $quote_data,
 				'sort_order' => $this->config->get('free_sort_order'),
 				'error'      => false

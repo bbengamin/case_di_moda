@@ -35,7 +35,7 @@
                   <?php if ($option['type'] == 'image') { ?>
                   <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
                     <label class="control-label"><?php echo $option['name']; ?></label>
-                    <div id="input-option<?php echo $option['product_option_id']; ?>">
+                    <div id="input-option<?php echo $option['product_option_id']; ?>" class='product-picker-box'>
                       <?php foreach ($option['product_option_value'] as $option_value) { ?>
                       <div class="radio">
                         <input type="radio"  id='as<?php echo $option_value['product_option_value_id']; ?>' name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
@@ -283,11 +283,11 @@
           </div>
         </div>
         
-        <div class='col-sm-10 col-sm-offset-1'>
+        <div class='col-sm-12 prod-blck'>
                                 <div class="left-present-box clearfix">
                                     <div class='col-sm-7'>
                                         <h3>Подарок за покупку</h3>
-                                        <p>Брендовый шарф или фирменная подвеска. Тебе выбирать!</p>
+                                        <p>Брендовый шарф или фирменная подвеска. <i class='i-bolder'>Тебе выбирать!</i></p>
                                     </div>
                                     <div class='btn-group-present clearfix col-sm-5'>
                                         <div class="btn-group-present-item col-sm-6">
@@ -307,17 +307,19 @@
       </div>
       <ul class="nav nav-tabs">
         <?php if ($related_products) { ?>
-          <li class="active"><a class='active' data-toggle="tab" href="#related_products1">Другие модели бренда</a></li>
+          <li class="<?php if($related_products) { echo 'active'; } ?>"><a class='active' data-toggle="tab" href="#related_products1">Другие модели бренда</a></li>
         <?php } ?>
+        <?php if ($related_products && $related_products2) { ?>
         <li><span class='tab-separate'>   —   </span></li>
+        <?php } ?>
         <?php if ($related_products2) { ?>
-           <li><a data-toggle="tab" href="#related_products2">Еще из категории</a></li>
+           <li class="<?php if(!$related_products) { echo 'active'; } ?>"><a data-toggle="tab" href="#related_products2">Еще из категории</a></li>
         <?php } ?>
       </ul>
       
       <div class="tab-content">
       <?php if ($related_products) { ?>
-        <div id="related_products1" class="tab-pane active">
+        <div id="related_products1" class="tab-pane <?php if($related_products) { echo 'active'; } ?>">
           
           <div class="row">
             <?php $i = 0; ?>
@@ -373,7 +375,7 @@
         </div>
       <?php } ?>
       <?php if ($related_products2) { ?>
-      <div id="related_products2"  class="tab-pane">
+      <div id="related_products2"  class="tab-pane <?php if(!$related_products) { echo 'active'; } ?>">
         
         <div class="row">
           <?php $i = 0; ?>

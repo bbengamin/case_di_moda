@@ -14,7 +14,7 @@
     <?php } else { ?>
     <input type="radio" data-text="<?php echo $quote['title']; ?>" name="shipping_method" value="<?php echo $quote['code']; ?>" data-cost="<?php echo $quote['cost']; ?>" />
     <?php } ?>
-    <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?></label>
+    <?php echo $quote['title']; ?></label>
 </div>
 <?php } ?>
 <?php } else { ?>

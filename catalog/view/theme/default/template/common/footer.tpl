@@ -66,10 +66,10 @@
             <form id="modal-call-back-form">
               <p>Заказать звонок</p>
               <div class="input-field">
-                <input type="text" name="name" required="required" placeholder="Имя">
+                <input type="text" name="name" required="required" placeholder="Ваше имя">
               </div>
               <div class="input-field">
-                <input type="text" name="phone" required="required" placeholder="7(000)000-00-00">
+                <input type="text" name="phone" required="required" placeholder="Телефон">
               </div>
               <div class="input-field">
                 <button type="submit" id="call-back-form-button">Заказать звонок</button>
@@ -97,7 +97,7 @@
                 <p>Активируй низкие цены, которые<br> будет действовать только 60 минут!</p>
               </div>
               <div class="input-field input-field-specials">
-                <button type="submit" id="activate-special-btn">Активировать</button>
+                <button type="submit" id="activate-special-btn">Активировать скидку</button>
              
                 <button type="submit" id="go-to-login-button" >Войти в личный кабинет</button>
               </div>
@@ -122,10 +122,10 @@
             <form id="modal-quick-buy-form">
               <p>Купить в один клик</p>
               <div class="input-field">
-                <input type="text" name="name" required="required" placeholder="Имя">
+                <input type="text" name="name" required="required" placeholder="Ваше имя">
               </div>
               <div class="input-field">
-                <input type="text" name="phone" required="required" placeholder="7(000)000-00-00">
+                <input type="text" name="phone" required="required" placeholder="Телефон">
               </div>
               <div class="input-field">
                 <button type="submit" id="call-quick-buy-button">Купить в один клик</button>
@@ -175,22 +175,23 @@
           <h4 class="modal-title" id="fast-order-cart-modal-Label">Авторизация</h4>
           <form id='authorization-form'>
             <div class="input-block">
-              <label>E-mail:</label>
-              <input type="email" name="email">
+              <input type="email" name="email" placeholder='E-mail'>
             </div>
             <div class="input-block">
-              <label>Пароль:</label>
-              <input type="password" name="password">
+              <input type="password" name="password" placeholder='Пароль'>
             </div>
             <div class="input-block">
               <button class="modal-sumbit-button">Войти</button>
             </div>
           </form>
-          <div class="go-to-register">
+          
+        </div>
+        <div class='modal-footer'>
+            <div class="go-to-register">
             <a>Зарегистрироваться</a>
           </div>
           <div class="forgot-pass">
-            <a href="#">Забыли пароль?</a>
+            <a href="/index.php?route=account/forgotten">Забыли пароль?</a>
           </div>
         </div>
       </div>
@@ -227,7 +228,10 @@
               <button class="modal-sumbit-button">Создать аккаунт</button>
             </div>
           </form>
-          <div class="go-to-authorization">
+          
+        </div>
+        <div class='modal-footer'>
+            <div class="go-to-authorization">
             <a>Авторизация</a>
           </div>
         </div>

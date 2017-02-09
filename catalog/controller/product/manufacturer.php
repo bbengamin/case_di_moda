@@ -24,7 +24,7 @@ class ControllerProductManufacturer extends Controller {
 		);
 
 		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('text_brand'),
+			'text' => "Бренды",
 			'href' => $this->url->link('product/manufacturer')
 		);
 
@@ -83,7 +83,7 @@ class ControllerProductManufacturer extends Controller {
 		if (isset($this->request->get['sort'])) {
 			$sort = $this->request->get['sort'];
 		} else {
-			$sort = 'p.sort_order';
+			$sort = 'pd.name';
 		}
 
 		if (isset($this->request->get['order'])) {
@@ -112,7 +112,7 @@ class ControllerProductManufacturer extends Controller {
 		);
 
 		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('text_brand'),
+			'text' => "Бренды",
 			'href' => $this->url->link('product/manufacturer')
 		);
 
@@ -145,6 +145,12 @@ class ControllerProductManufacturer extends Controller {
 			);
 
 			$data['heading_title'] = $manufacturer_info['name'];
+		
+			if (isset($manufacturer_info['image_big']) && $manufacturer_info['image_big']) {
+				$data['thumb'] = "/image/" . $manufacturer_info['image_big'];//$this->model_tool_image->resize($category_info['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+			} else {
+				$data['thumb'] = '';
+			}
 
 			$data['text_empty'] = $this->language->get('text_empty');
 			$data['text_quantity'] = $this->language->get('text_quantity');
@@ -179,7 +185,8 @@ class ControllerProductManufacturer extends Controller {
 			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 
 			$results = $this->model_catalog_product->getProducts($filter_data);
-
+			$data['filtered_products_amount'] = count($results);
+			
 			foreach ($results as $result) {
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
@@ -237,6 +244,7 @@ class ControllerProductManufacturer extends Controller {
 				$data['sorts']['default'] = array(
 					'text'  => $this->language->get('text_default'),
 					'value' => 'p.sort_order-DESC',
+					'value_c' => 'p.sort_order-ASC',
 					'view' => 'up',
 					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.sort_order&order=DESC' . $url)
 				);
@@ -244,6 +252,7 @@ class ControllerProductManufacturer extends Controller {
 				$data['sorts']['default'] = array(
 					'text'  => $this->language->get('text_default'),
 					'value' => 'p.sort_order-ASC',
+					'value_c' => 'p.sort_order-DESC',
 					'view' => 'down',
 					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.sort_order&order=ASC' . $url)
 				);
@@ -253,6 +262,7 @@ class ControllerProductManufacturer extends Controller {
 				$data['sorts']['name'] = array(
 					'text'  => $this->language->get('text_name_desc'),
 					'value' => 'pd.name-DESC',
+					'value_c' => 'pd.name-ASC',
 					'view' => 'up',
 					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=pd.name&order=DESC' . $url)
 				);
@@ -260,6 +270,7 @@ class ControllerProductManufacturer extends Controller {
 				$data['sorts']['name'] = array(
 					'text'  => $this->language->get('text_name_asc'),
 					'value' => 'pd.name-ASC',
+					'value_c' => 'pd.name-DESC',
 					'view' => 'down',
 					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=pd.name&order=ASC' . $url)
 				);
@@ -270,6 +281,7 @@ class ControllerProductManufacturer extends Controller {
 				$data['sorts']['price'] = array(
 					'text'  => $this->language->get('text_price_desc'),
 					'value' => 'p.price-DESC',
+					'value_c' => 'p.price-ASC',
 					'view' => 'up',
 					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.price&order=DESC' . $url)
 				);
@@ -277,6 +289,7 @@ class ControllerProductManufacturer extends Controller {
 				$data['sorts']['price'] = array(
 					'text'  => $this->language->get('text_price_asc'),
 					'value' => 'p.price-ASC',
+					'value_c' => 'p.price-DESC',
 					'view' => 'down',
 					'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.price&order=ASC' . $url)
 				);

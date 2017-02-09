@@ -167,11 +167,11 @@
               
                 <ul class="list-inline head-menu-first">
                 
-                  <li><a href="" title="">Оплата и доставка</a></li>
-                  <li><a href="" title="">Гарантия и возвраты</a></li>
-                  <li><a href="" title="">FAQ</a></li>
-                  <li><a href="" title="">Подарочные сертификаты</a></li>
-                  <li><a href="" title="">Контакты</a></li>
+                     <li><a href="/index.php?route=information/information&information_id=10" title="Оплата и доставка">Оплата и доставка</a></li>
+                  <li><a href="/index.php?route=information/information&information_id=11" title="Гарантия и возвраты">Гарантия и возвраты</a></li>
+                  <li><a href="/index.php?route=information/information&information_id=12" title="FAQ">FAQ</a></li>
+                  <li><a href="/index.php?route=information/information&information_id=13" title="Подарочные сертификаты">Подарочные сертификаты</a></li>
+                  <li><a href="/index.php?route=information/information&information_id=9" title="Контакты">Контакты</a></li>
             
                 </ul>
                 </div>
@@ -224,7 +224,7 @@
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/index.php?route=product/manufacturer">Бренды</a></li>
+        <!-- <li><a href="/index.php?route=product/manufacturer">Бренды</a></li> -->
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
         <li class="dropdown drop-category"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle top-menu-link" data-toggle="dropdown"><?php echo $category['name']; ?></a>
@@ -244,11 +244,16 @@
                 <?php } ?>
               </ul>
               <?php } ?>
+              <?php if($category['img_menu']){ ?>
+                <div class='top-menu-img' style='background-image: url("<?php echo $category["img_menu"]; ?>");'>
+               <!--   <img src='<?php echo $category["img_menu"]; ?>'>    -->
+                </div>
+              <?php } ?>
             </div>
              <div class='drop-dwn-footer-box'>
               <ul class='list-unstyled list-inline'>
-                <li><a href='#'>Каталог</a></li>
-                <li><a href='#'>Обратная связь</a></li>
+               <!-- <li><a href='#'>Каталог</a></li> -->
+                <li><a href='#' data-toggle="modal" data-target="#myModal-call-back">Обратная связь</a></li>
                 <li><a href='#'>Мы в соц.сетях</a></li>
                 <li class='soc-icon'><a href="#" title=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                   <li class='soc-icon'><a href="#" title=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
@@ -265,12 +270,12 @@
           <ul class='list-unstyled sec-head-right-side'>
             <li class='sec-head-right-side-item'><?php echo $cart; ?></li>
             
-            <li class="sec-head-right-side-item dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle login-reg-btn" data-toggle="dropdown"><span class="left-icons user-ico"><img src="/catalog/view/theme/default/image/user-icon.png" class="img-responsive"> </span> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+            <li class="sec-head-right-side-item dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle login-reg-btn" data-toggle="dropdown"><span class="left-icons user-ico"><img src="/catalog/view/theme/default/image/user-icon.png" class="img-responsive"> </span> <span class=""><?php echo $text_account; ?></span> <span class="caret"></span></a>
                     <ul class="dropdown-menu my-settings-menu">
                       <?php if ($logged) { ?>
                       <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
                       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-                      <li><a href="<?php echo $account; ?>">Настройки</a></li>
+                      <li><a href="/index.php?route=account/edit">Настройки</a></li>
                       <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
                       <?php } else { ?>
                       <li><button type="button" id="registration-btn" data-toggle="modal" data-target="#registration" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product registration-btn">Зарегистрироваться</button></li>

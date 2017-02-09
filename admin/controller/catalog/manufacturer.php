@@ -384,6 +384,23 @@ class ControllerCatalogManufacturer extends Controller {
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
+		
+		if (isset($this->request->post['image_big'])) {
+			$data['image_big'] = $this->request->post['image_big'];
+		} elseif (!empty($manufacturer_info)) {
+			$data['image_big'] = $manufacturer_info['image_big'];
+		} else {
+			$data['image_big'] = '';
+		}
+
+
+		if (isset($this->request->post['image_big']) && is_file(DIR_IMAGE . $this->request->post['image_big'])) {
+			$data['thumb_big'] = $this->model_tool_image->resize($this->request->post['image_big'], 100, 100);
+		} elseif (!empty($manufacturer_info) && is_file(DIR_IMAGE . $manufacturer_info['image_big'])) {
+			$data['thumb_big'] = $this->model_tool_image->resize($manufacturer_info['image_big'], 100, 100);
+		} else {
+			$data['thumb_big'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+		}
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 

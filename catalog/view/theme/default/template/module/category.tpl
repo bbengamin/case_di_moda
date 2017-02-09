@@ -1,4 +1,7 @@
-<button data-toggle="collapse" class='category-list-tggl' data-target="#category-left-col-list">Категории</button>
+	<div id='filtered_products_amount'>
+		
+	</div>
+<button data-toggle="collapse" class='category-list-tggl' data-target="#category-left-col-list">Категория</button>
 
 <div id="category-left-col-list" class="collapse">
   <div class="list-group">

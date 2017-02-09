@@ -18,7 +18,7 @@ class ControllerProductCategory extends Controller {
 		if (isset($this->request->get['sort'])) {
 			$sort = $this->request->get['sort'];
 		} else {
-			$sort = 'p.sort_order';
+			$sort = 'pd.name';
 		}
 
 		if (isset($this->request->get['order'])) {
@@ -44,6 +44,11 @@ class ControllerProductCategory extends Controller {
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('text_home'),
 			'href' => $this->url->link('common/home')
+		);
+		
+		$data['breadcrumbs'][] = array(
+			'text' => "Каталог",
+			'href' => ""
 		);
 
 		if (isset($this->request->get['path'])) {
@@ -251,6 +256,7 @@ class ControllerProductCategory extends Controller {
 				$data['sorts']['default'] = array(
 					'text'  => $this->language->get('text_default'),
 					'value' => 'p.sort_order-DESC',
+					'value_c' => 'p.sort_order-ASC',
 					'view' => 'up',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=DESC' . $url)
 				);
@@ -258,6 +264,7 @@ class ControllerProductCategory extends Controller {
 				$data['sorts']['default'] = array(
 					'text'  => $this->language->get('text_default'),
 					'value' => 'p.sort_order-ASC',
+					'value_c' => 'p.sort_order-DESC',
 					'view' => 'down',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
 				);
@@ -267,6 +274,7 @@ class ControllerProductCategory extends Controller {
 				$data['sorts']['name'] = array(
 					'text'  => $this->language->get('text_name_desc'),
 					'value' => 'pd.name-DESC',
+					'value_c' => 'pd.name-ASC',
 					'view' => 'up',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
 				);
@@ -274,6 +282,7 @@ class ControllerProductCategory extends Controller {
 				$data['sorts']['name'] = array(
 					'text'  => $this->language->get('text_name_asc'),
 					'value' => 'pd.name-ASC',
+					'value_c' => 'pd.name-DESC',
 					'view' => 'down',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
 				);
@@ -284,6 +293,7 @@ class ControllerProductCategory extends Controller {
 				$data['sorts']['price'] = array(
 					'text'  => $this->language->get('text_price_desc'),
 					'value' => 'p.price-DESC',
+					'value_c' => 'p.price-ASC',
 					'view' => 'up',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
 				);
@@ -291,6 +301,7 @@ class ControllerProductCategory extends Controller {
 				$data['sorts']['price'] = array(
 					'text'  => $this->language->get('text_price_asc'),
 					'value' => 'p.price-ASC',
+					'value_c' => 'p.price-DESC',
 					'view' => 'down',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
 				);

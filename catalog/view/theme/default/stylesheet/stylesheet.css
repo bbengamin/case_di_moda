@@ -217,7 +217,7 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 .tab-content .product-thumb .image img {
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
+   
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     cursor: default;
@@ -455,7 +455,14 @@ header {
 	padding-bottom: 0;
 }
 #menu .dropdown-inner {
-	display: table;
+	    width: 960px;
+    height: 337px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #222222;
+    padding: 0 0 25px 0;
+    padding-top: 0;
 }
 #menu .dropdown-inner ul {
 	display: table-cell;
@@ -534,14 +541,11 @@ header {
 @media (min-width: 768px) {
 	#menu .dropdown.drop-category:hover .dropdown-menu {
 		display: block;
-		width: 960px;
-		height: 337px;
-	    display: flex;
-	    flex-direction: row;
-	    justify-content: flex-start;
-	    background: #222222;
-	    padding: 25px;
-	    padding-top: 0;
+	    padding-top: 37px;
+	    background: transparent;
+	    border: none;
+	    top: 30px;
+	    box-shadow: none;
 	}
 }
 @media (max-width: 767px) {
@@ -580,7 +584,7 @@ header {
 }
 /* footer */
 footer {
-	margin-top: 90px;
+/*	margin-top: 90px;*/
 	padding-top: 30px;
 	background-color: #fff;
 	color: #e2e2e2;
@@ -615,12 +619,14 @@ footer h5 {
 }
 /* breadcrumb */
 .breadcrumb {
-	margin: 0 0 20px 0;
+	margin: 40px 0 20px 0;
 	padding: 8px 0;
 	background-color: transparent;
 }
 .breadcrumb i {
 	font-size: 16px;
+	font-family: "MuseoSansRegular";
+	font-weight: 800;
 }
 .fa-home:before {
     content: "Главная";
@@ -635,7 +641,7 @@ footer h5 {
     color: #157fbe;
 	font-family: "MuseoSansRegular";
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 800;
 	line-height: 16px;
 }
 .breadcrumb > li + li:before {
@@ -656,7 +662,11 @@ footer h5 {
 	display: none;
 }
 .pagination {
-	margin: 0;
+	margin: 50px auto;
+	    padding-left: 40px;
+}
+.mfilter-content > ul > li {
+    margin: 40px auto;
 }
 /* buttons */
 .buttons {
@@ -1156,6 +1166,7 @@ header .row {
 }
 #slideshow0 .item img {
 	width: 100%;
+	margin-top: -14px;
 }
 #slideshow0 .owl-wrapper-outer {
 	border: none!important;
@@ -1423,7 +1434,7 @@ header .row {
 	
 }
 .main-menu-wrapper-sec-header {
-	background: #eff5f9;
+	background: #fff;
 	padding: 18px 0;
 }
 .call-back-btn {
@@ -1557,12 +1568,14 @@ li.sec-head-right-side-box {
 	color: #23a1d1;
 }
 .modal-body h4 {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
     line-height: 36px;
     margin-bottom: 15px;
     text-align: center;
+    color: #222222;
+	font-family: "MuseoSansRegular";
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 20px;
 }
 .modal-body .input-field input {
 	width: 100%;
@@ -1572,6 +1585,8 @@ li.sec-head-right-side-box {
 	background: #efefef;
 	color: #666;
 	    border-radius: 0;
+	        font-size: 14px;
+	        font-family: "MuseoSansRegular";
 }
 .modal-body .input-block input {
 	width: 100%;
@@ -1581,6 +1596,8 @@ li.sec-head-right-side-box {
 	background: #efefef;
 	color: #666;
 	    border-radius: 0;
+	        font-size: 14px;
+	        font-family: "MuseoSansRegular";
 }
 .modal-body .input-field input:focus, .modal-body .input-block input:focus, .modal-body .input-field input:active, .modal-body .input-block input:active {
 	outline: none;
@@ -1589,7 +1606,7 @@ li.sec-head-right-side-box {
 	width: 70%;
 	border: 1px solid transparent;
 	border-radius: 15px;
-	padding: 12px 25px;
+	padding: 7px 25px;
 	background: #157fbe;
 	color: #fff;
 	margin: 5px auto;
@@ -1616,8 +1633,8 @@ li.sec-head-right-side-box {
 
 button.close {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 15px;
+    right: 20px;
     z-index: 1100;
 }
 /* CHECKOUT */
@@ -1626,6 +1643,7 @@ button.close {
 }
 .tab{
 	display: none;
+	min-height: 400px;
 }
 /* CHECKOUT */
 .my-settings-menu {
@@ -1863,10 +1881,10 @@ font-family: "MuseoSansBold";
 #product-picker-block > ul > div > label {
 	display: none;
 }
-#input-option228 input {
+#product-picker-block input {
 	display: none;
 }
-#input-option228 .radio label {
+#product-picker-block .radio label {
 	width: 21px;
 	height: 21px;
 	border-radius: 50%;
@@ -1876,7 +1894,7 @@ font-family: "MuseoSansBold";
 	overflow: hidden;
 	padding-left: 0;
 }
-#input-option228 .radio label:before {
+#product-picker-block .radio label:before {
 	content: '';
 	position: absolute;
 	display: block;
@@ -1889,7 +1907,7 @@ font-family: "MuseoSansBold";
 	transform: translate(-50%,-50%);
 	line-height: 8px;
 }
-#input-option228 .radio input[type=radio]:checked ~ label:before {
+#product-picker-block .radio input[type=radio]:checked ~ label:before {
 	content: '\f00c';
 	position: absolute;
 	display: block;
@@ -1940,6 +1958,8 @@ font-family: "MuseoSansBold";
     justify-content: flex-end;
     padding-right: 0;
     align-items: center;
+    margin-top: -10px;
+    margin-bottom: 50px;
 }
 .sorts-box a {
 	margin-left: 25px;
@@ -1951,7 +1971,7 @@ font-family: "MuseoSansBold";
 }
 .sorts-box p {
 	color: #979797;
-	font-family: "MuseoSansRegular";
+	font-family: "MuseoSansBold";
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 19px;
@@ -2111,6 +2131,7 @@ font-family: "MuseoSansBold";
 	font-size: 18px;
 	font-weight: 900;
 	text-transform: uppercase;
+	margin-left: -2px;
 }
 .mfilter-button-bottom {
 	border-top: none;
@@ -2138,11 +2159,11 @@ font-family: "MuseoSansBold";
 	left: 0px;
 	top: 50%;
 	transform:translateY(-50%);
-	border: 1px solid #666;
+	border: 1px solid #222222;
 	border-radius: 3px;
 	color: #fff;
 	font-size: 11px;
-	background: #666;
+	background: #222222;
 }
 #category-left-col-list .list-group a.active, #category-left-col-list .list-group a.active:hover, #category-left-col-list .list-group a:hover {
 	color: rgba(34, 34, 34, 0.5);
@@ -2210,13 +2231,13 @@ body > footer > div.wr1 > div > div:nth-child(3) {
     width: 100%;
     background: #eee;
     position: relative;
-     margin: 50px 0;
+    margin: 50px 0 90px;
 }
 .icons-progress span {
 	display: block;
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	top: 50%;
 	transform: translateY(-50%);
 	border-radius: 50%;
@@ -2245,7 +2266,7 @@ body > footer > div.wr1 > div > div:nth-child(3) {
 	font-family: 'FontAwesome';
 	width: 16px;
 	height: 16px;
-	line-height: 12px;
+	line-height: 14px;
 	text-align: center;
 	left: 50%;
 	top: 50%;
@@ -2305,9 +2326,9 @@ body > footer > div.wr1 > div > div:nth-child(3) {
 	content:'';
 	position: absolute;
 	display: block;
-	width: 155px;
-	height: 9px;
-	left: -152px;
+	    width: 145px;
+    height: 9px;
+    left: -144px;
 	top: 50%;
 	transform:translateY(-50%);
 	background: #157fbe;
@@ -2330,10 +2351,11 @@ body > footer > div.wr1 > div > div:nth-child(3) {
     text-align: center;
     line-height: 30px;
     font-size: 18px;
+    cursor: pointer;
 }
 .qua-box-main input {
 	height: 30px;
-    width: 30px;
+    width: 25px;
     background: #eee;
     color: #000;
     text-align: center;
@@ -2365,28 +2387,29 @@ body > footer > div.wr1 > div > div:nth-child(3) {
 .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
 	color: #a1a1a1;
 	font-family: "MuseoSansRegular";
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 300;
 	line-height: 16px;
 }
 .crt-name-column a {
 	color: #222222;
-	font-family: "MuseoSansRegular";
-	font-size: 12px;
-	font-weight: 700;
+	font-family: "MuseoSansBold";
+	font-size: 14px;
+	font-weight: 900;
 }
 .crt-price-column .new-prc {
 	color: #d13e3e;
 	font-family: "MuseoSansRegular";
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 900;
 }
 .crt-price-column .old-prc {
 	color: #222;
 	font-family: "MuseoSansRegular";
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 900;
 	margin-bottom: 0;
+	text-decoration: line-through;
 }
 .crt-remoo-box button {
 	background: #fff;
@@ -2407,7 +2430,7 @@ body > footer > div.wr1 > div > div:nth-child(3) {
 	width: 172px;
 	height: 32px;
 	border: 1px solid #000000;
-		border-radius: 15px;
+		border-radius: 0;
 		padding: 8px 25px;
 		float: left;
 		 text-align: center;
@@ -2419,12 +2442,12 @@ body > footer > div.wr1 > div > div:nth-child(3) {
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 16px;
-	width: 200px;
-	height: 31px;
+/*	width: 200px;*/
+	height: 32px;
 	cursor: pointer;
 	border-radius: 0;
 	background-color: #157fbe;
-	padding: 8px 25px;
+	    padding: 8px 25px 8px 10px;
 	float: right;
 	 text-align: center;
 }
@@ -2487,6 +2510,7 @@ tbody > tr > td > img {
     left: 0;
     padding: 25px;
     border-top: 1px solid #7a7a7a;
+    background: #222;
 }
 .drop-dwn-footer-box ul {
 	display: flex;
@@ -2501,20 +2525,10 @@ tbody > tr > td > img {
 	color: #656565!important;
 }
 .additional-categories {
-	height:	214px
+	height:	214px;
+	    padding-left: 15px;
 }
-#menu .dropdown-menu:before {
-    content: '';
-    display: block;
-    position: absolute;
-    border: 8px solid transparent;
-    border-bottom: 10px solid #222222;
-    display: block;
-    width: 0;
-    height: 0;
-    top: -18px;
-    left: 20px;
-}
+
 .nav>li {
     position: static;
     display: block;
@@ -2541,11 +2555,13 @@ tbody > tr > td > img {
 	border: 5px solid #157fbe;
 	background-color: #ffffff;
 	position: relative;
-	padding: 25px 30px;
+	padding: 20px 20px;
+	display: flex;
+    align-items: center;
 }
 .right-present-box {
 	position: relative;
-	padding: 25px 30px;
+	padding: 20px 20px;
 	background: url(/catalog/view/theme/default/image/present-sec-bg.jpg) no-repeat center;
 	background-size: cover;
 }
@@ -2565,6 +2581,7 @@ tbody > tr > td > img {
 }
 .btn-group-present {
 	padding: 0;
+padding-top: 10px;
 }
 .btn-group-present-item span {
 	    display: block;
@@ -2601,18 +2618,71 @@ tbody > tr > td > img {
 	text-decoration: none;
 }
 .left-present-box h3 {
-	color: #d32f2f;
- 	font-family: "MuseoSansRegular";
-	font-size: 18px;
-	font-weight: 900;
-	line-height: 11px;
+color: #d32f2f;
+    font-family: "MuseoSansBold";
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 0;
 }
 .left-present-box p {
 	color: #000000;
+    font-family: "MuseoSansRegular";
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 500;
+}
+.prod-blck .left-present-box h3 {
+	color: #d32f2f;
+ 	font-family: "MuseoSansBold";
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+.prod-blck .left-present-box p {
+	color: #000000;
  	font-family: "MuseoSansRegular";
-	font-size: 13px;
-	line-height: 11px;
+	font-size: 19px;
+	line-height:1;
 	font-weight: 500;
+}
+.prod-blck .btn-group-present-item span {
+    display: block;
+    font-family: "MuseoSansRegular";
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    line-height: 16px;
+}
+.prod-blck .btn-group-present-item .present-old-price {
+	text-decoration: line-through;
+}
+.prod-blck .btn-group-present-item span.present-new-price {
+	color: #ca6666;
+}
+
+
+.prod-blck .btn-group-present-item a {
+    display: block;
+    width: 89px;
+    font-size: 16px;
+    line-height: 34px;
+    height: auto;
+    text-align: center;
+    background-color: #157fbe;
+    color: #ffffff;
+    font-family: "MuseoSansRegular";
+    font-weight: 700;
+    width: 90%;
+    margin: 10px auto;
+}
+.prod-blck .btn-group-present {
+	padding-top: 25px;
+}
+.i-bolder {
+	font-family: "MuseoSansBold";
+	font-weight: 900;
+	font-style: normal;
 }
 .right-present-box p {
 	color: #000000;
@@ -2642,6 +2712,7 @@ tbody > tr > td > img {
 .present-box {
     position: relative;
     margin-top: 50px;
+        margin-bottom: 100px;
 }
 .crt-img-column {
 	width: 60px;
@@ -2657,7 +2728,7 @@ tbody > tr > td > img {
     font-weight: 500;
     line-height: 16px;
     width: 200px;
-    height: 31px;
+    height: 32px;
     cursor: pointer;
     border-radius: 0;
     padding: 8px 25px;
@@ -2665,7 +2736,7 @@ tbody > tr > td > img {
 .crt-ttl-box {
 	color: #000000;
 	font-family: "MuseoSansRegular";
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 900;
 }
 #menu #cart .dropdown-menu:before {
@@ -2702,7 +2773,7 @@ tbody > tr > td > img {
 }
 .advantages-item {
 	text-align: center;
-	    margin: 0 20px;
+	    margin: 0 30px;
 }
 .advantages-item img {
 	margin: 0 auto;
@@ -2758,6 +2829,9 @@ tbody > tr > td > img {
     opacity: 0.5;
     line-height: 14px;
     margin: 25px auto;
+    margin-left: 6px;
+    margin-bottom: 70px;
+    font-family: "MuseoSansBold";
 }
 #filtered_products_amount:before {
 	content: '\f1de';
@@ -2766,9 +2840,11 @@ tbody > tr > td > img {
 	left: 0;
 	top:50%;
 	transform: translateY(-50%) rotate(-90deg);
-	width: 15px;
-	height: 15px;
-	font-family: 'FontAwesome';
+	width: 20px;
+    height: 20px;
+    font-family: 'FontAwesome';
+    line-height: 20px;
+    font-size: 22px;
 }
 .pagination>li>a, .pagination>li>span {
     position: relative;
@@ -2780,7 +2856,7 @@ tbody > tr > td > img {
     text-decoration: none;
     background-color: #fff;
     border: none!important;
-    margin: 0 3px;
+        margin: 0 15px 0 0;
     border-radius: 8px;
     width: 25px;
     height: 25px;
@@ -2805,6 +2881,10 @@ label.mfilter-tb-as-td {
     margin: 5px auto;
     display: block;
     cursor: pointer;
+        margin-left: 0;
+}
+#category-left-col-list .list-group {
+	padding-left: 4px;
 }
 label.mfilter-tb-as-td:before {
 	content: '';
@@ -2835,30 +2915,64 @@ label.mfilter-tb-as-td:before {
     left: -5px;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid #666;
+    border: 1px solid #222222;
     border-radius: 3px;
     font-size: 11px;
-    background: #666;
+    background: #222222;
 }
 .alert-success {
-    color: #3c763d;
     background-color: #fff;
     border-color: #d6e9c6;
     position: relative;
     margin: 15px auto;
-    padding: 25px 25px 25px 25px;
+    padding: 20px 25px 20px 20px;
+    border-radius: 0;
     border: 1px solid #157fbe;
+   	font-family: "MuseoSansRegular";
+	font-size: 14px;
+	font-weight: 500;
+	color: #484848;
+}
+.alert-success button.close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    z-index: 1100;
+}
+.alert-success a {
+	color: #157fbe;
+	text-decoration: underline;
+	font-family: "MuseoSansRegular";
+	font-size: 14px;
+	font-weight: 500;
 }
 .alert.alert-success .fa {
 	display: none;
 }
 #myModal-activate-special .modal-dialog {
-	width: 600px;
-    height: 155px;
+	width: 640px;
 }
 #myModal-activate-special .modal-content {
 	background: url(/catalog/view/theme/default/image/popup-bg.jpg) no-repeat center;
 	background-size: cover;
+}
+#myModal-activate-special .modal-body {
+    position: relative;
+    padding: 10px;
+}
+.custom-sort span {
+	color: #d5d5d5;
+}
+.custom-sort.down.active .ar-dwn {
+	transform: scale(1.3);
+    display: inline-block;
+    color: #157fbe;
+}
+.custom-sort.up.active .ar-up {
+	transform: scale(1.3);
+    display: inline-block;
+    color: #157fbe;
 }
 .speciales-text h4 {
 	color: #222222;
@@ -2867,6 +2981,7 @@ label.mfilter-tb-as-td:before {
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: left;
+	    margin-bottom: 0;
 }
 .speciales-text h4 i {
 	color: #157fbe;
@@ -2886,15 +3001,172 @@ label.mfilter-tb-as-td:before {
 	text-align: left;
 }
 .input-field.input-field-specials {
-	    display: flex;
+    display: flex;
     justify-content: space-between;
+    width: auto;
+    margin: 0;
 }
 .input-field.input-field-specials button {
 	width: auto;
+    margin: 0;
 }
 .input-field.input-field-specials button:last-child {
 	background: transparent;
 	color: #484848;
+}
+.speciales-text {
+	position: relative;
+}
+.speciales-text:before {
+	content: '?';
+	position: absolute;
+	display: block;
+	width: 47px;
+	height: 76px;
+	opacity: 1;
+	color: #706760;
+	font-family: "MuseoSansRegular";
+	font-size: 104px;
+	font-weight: 900;
+	line-height: 18px;
+	line-height: 1;
+    right: 65px;
+    top: -20px;
+}
+#authorization .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-footer a {
+	color: #157fbe;
+	font-family: "MuseoSansRegular";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    cursor: pointer;
+}
+.modal-footer a:hover {
+    color: #23a1d1;
+}
+#registration .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+}
+.top-menu-img {
+	width: 265px;
+    height: 265px;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 37px;
+}
+.top-menu-img img {
+	width: 100%;
+}
+.dropdown.drop-category a {
+	position: relative;
+}
+.dropdown.drop-category a:hover:before {
+	content: '';
+    display: block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom: 10px solid #222222;
+    display: block;
+    width: 0;
+    height: 0;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dropdown.drop-category a.hovered:before {
+	content: '';
+    display: block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom: 10px solid #222222;
+    display: block;
+    width: 0;
+    height: 0;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+table#cart-load tbody tr {
+    height: 90px;
+}
+table#cart-load thead tr {
+    height: 45px;
+}
+#tab-description > div.manufacturer-img-box > a > img {
+    margin: 0 auto;
+    display: block;
+}
+.some-t-check {
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	color: #f6f6f6;
+	    min-width: 155px;
+	font-family: "MuseoSansRegular";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	font-style: normal;
+}
+.step.active .some-t-check {
+	color: #000000;
+}
+.crt-name-column {
+	width: 160px;
+}
+.crt-imgg-column {
+	width: 160px;
+}
+.crt-size-column {
+	width: 160px;
+	font-style: italic;
+	font-family: "MuseoSansRegular";
+    font-size: 14px;
+    font-weight: 300;
+}
+#checkout-form > div.tab.step4.clearfix.active > div.col-sm-4 > span {
+	font-family: "MuseoSansBold";
+	font-size: 14px;
+    font-weight: 900;
+    display: block;
+        margin-bottom: 5px;
+    margin-top: 20px;
+}
+.ship-st4, .address-st4, .paym-st4 {
+	font-family: "MuseoSansRegular";
+    font-size: 14px;
+    font-weight: 300;
+}
+.next-step {
+	position: relative;
+	padding-right: 25px;
+}
+.next-step:before {
+	content:'\f178';
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: 'FontAwesome';
+	color: #fff;
+}
+table#cart-load tbody tr:last-child {
+	    border-bottom: 1px solid #eee;
 }
 @media (max-width:1200px) {
 	.interest-box {
@@ -2905,6 +3177,9 @@ label.mfilter-tb-as-td:before {
 	
 }
 @media (max-width:767px) {
+	#menu #cart .dropdown-menu:before{
+		display:none;
+	}
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
     	width: 90%;
 	}
@@ -2933,7 +3208,7 @@ label.mfilter-tb-as-td:before {
 	    flex-direction: column;
 	}
 	#menu > div.collapse.navbar-collapse.navbar-ex1-collapse > ul > li:nth-child(1) > a {
-    	padding-left: 15px;
+    	padding-left: 10px;
 	}
 	.modal-dialog {
 	    width: 90%;
@@ -2973,19 +3248,204 @@ label.mfilter-tb-as-td:before {
 	    margin: 10px auto!important;
 	}
 	.next-step, #button-order {
+	    color: #ffffff;
+	    font-family: "MuseoSansRegular";
+	    font-size: 12px;
+	    font-weight: 500;
+	    line-height: 16px;
+	    width: 100%;
+	    height: 32px;
+	    cursor: pointer;
+	    border-radius: 0;
+	    background-color: #157fbe;
+	    padding: 8px 25px;
+	    float: right;
+	    text-align: center;
+	}
+	.prev-step {
+	    color: #000000;
+	    font-family: "MuseoSansRegular";
+	    font-size: 12px;
+	    font-weight: 500;
+	    line-height: 16px;
+	    width: 100%;
+	    height: 32px;
+	    border: 1px solid #000000;
+	    border-radius: 0;
+	    padding: 8px 25px;
+	    float: left;
+	    text-align: center;
+	    cursor: pointer;
+	}
+	.table#cart-load {
+	    width: 100%;
+	    max-width: 100%;
+	    margin-bottom: 20px;
+	    display: block;
+	    overflow: auto;
+	}
+	.next-step, #button-order {
 	    float: none;
 	    text-align: center;
-	    display: block;
-	    margin: 15px auto;
+	    display: inline-block;
+    	margin: 15px auto;
 	}
 	.buy-mores {
 	    margin: 5px auto;
 	    display: block;
 	    text-align: center;
 	}
+	.crt-img-column img {
+	    width: 60px;
+	    height: auto; 
+	    border: none;
+	}
+	.advantages-box {
+	    flex-direction: column;
+	    padding: 30px 0;
+	}
+	.left-present-box {
+	    flex-direction: column;
+	}
+	.inputs-steps-wrap {
+	    display: flex;
+	    flex-direction: column;
+	}
+	.inputs-second-step-wrap {
+    	width: 100%;
+	}
+	#menu .dropdown-inner {
+	    width: 90%;
+	  	height: auto;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    background: #222222;
+	    padding: 0 0 25px 0;
+	    padding-top: 0;
+	}
+	.sec-head-right-side {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    width: 300px;
+	}
+	.dropdown-menu.my-settings-menu:before {
+		display: none;
+	}
+	
+
+	.my-settings-menu {
+	    width: 180px;
+	    left: 37px;
+	    right: auto;
+	    transform: translateX(0);
+	    top: 50px;
+	    box-shadow: 0 -3px 15px 2px rgba(0, 0, 0, 0.13);
+	    background-color: #ffffff;
+	}
+	.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+   		padding: 5px 15px 5px 45px;
+	}
+	.sec-head-right-side-item {
+		width: 100%;
+	}
+	.sec-head-right-side-item .login-reg-btn {
+	    background: transparent;
+	   margin-left: 0;
+    width: 100%;
+	}
+	#menu .dropdown.open > ul {
+		width: 100%!important;
+	}
+	#cart .dropdown-menu {
+   		 padding: 15px;
+	}
+		#menu .dropdown.drop-category.hovered .dropdown-menu {
+		    display: block;
+		    padding-top: 0;
+		    background: transparent;
+		    border: none;
+		    top: 0px;
+		    box-shadow: none;
+		    position: relative;
+		    width: 100%;
+		    margin: 0 auto;
+		    display: block;
+		}
+		#menu .dropdown-inner {
+		    width: 100%;
+		    height: auto;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: flex-start;
+		    background: #eff5f9;
+		    padding: 0 0 25px 0;
+		    padding-top: 0;
+		}
+		#menu .dropdown-inner a {
+		    width: 100%;
+		    color: #000!important;
+		}
+		#menu > div.collapse > ul > li > div > div > ul > li > a:nth-child(1) {
+		    color: #000000;
+		    font-size: 14px;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		}
+		.additional-categories {
+		     height: auto; 
+		     padding-left: 15px;
+		}
+		.dropdown.drop-category a.hovered:before {
+			display: none;
+		}
+	.drop-dwn-footer-box {
+		display: none;
+	}
+	.top-menu-img {
+		display: none;
+	}
+	li.sec-head-right-side-box {
+    	float: none;
+	}
+	.sec-head-right-side {
+	    display: block;
+	    /* align-items: center; */
+	    /* flex-direction: column; */
+	    width: 100%;
+	}
+	.sec-head-right-side-item {
+	    width: 100%;
+	}
 }
 @media (max-width:500px) {
-	
+	#myModal-activate-special .modal-dialog{
+	    width: 90%;
+	}
+	.speciales-text:before {
+	    content: '?';
+	    position: absolute;
+	    display: block;
+	    width: 47px;
+	    height: 76px;
+	    opacity: 1;
+	    color: #706760;
+	    font-family: "MuseoSansRegular";
+	    font-size: 36px;
+	    font-weight: 900;
+	    line-height: 18px;
+	    line-height: 1;
+	    right: -29px;
+	    top: -7px;
+	}
+	.input-field.input-field-specials button{
+		display: block;
+		width: 100%;
+	}
+	.input-field.input-field-specials{
+		display: block;
+	}
 }
 @media (max-width:320px) {
 	

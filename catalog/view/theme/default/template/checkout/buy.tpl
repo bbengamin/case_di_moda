@@ -32,10 +32,10 @@
             <?php echo $content_top; ?>
             
             <div class='icons-progress'>
-                <span class="step active" id='step1'></span>
-                <span class="step" id='step2'></span>
-                <span class="step" id='step3'></span>
-                <span class="step" id='step4'></span>
+                <span class="step active" id='step1'><i class='some-t-check t-check1'>Корзина</i></span>
+                <span class="step" id='step2'><i class='some-t-check t-check1'>Адрес</i></span>
+                <span class="step" id='step3'><i class='some-t-check t-check1'>Оплата</i></span>
+                <span class="step" id='step4'><i class='some-t-check t-check1'>Успешно оформлено</i></span>
             </div>
             <div class='tabs' id="checkout-form">
                 <div data-step='step1' class='tab step1 active'>    
@@ -49,9 +49,9 @@
                                 <td class="text-center crt-model-column">Цвет</td>
                                 <td class="text-center crt-model-column">Размер</td>
                                 <td class="text-center "><?php echo $column_price; ?></td>
-                                <td class="text-center crt-qua-column"><?php echo $column_quantity; ?></td>
+                                <td class="text-center crt-qua-column">Количество</td>
                                 
-                                <td class="text-center crt-total-column"><?php echo $column_total; ?></td>
+                                <td class="text-center crt-total-column">Итого</td>
                                 <td class="text-center"></td>
                             </tr>
                         </thead>
@@ -67,8 +67,8 @@
                                             <span class="text-danger">***</span>
                                         <?php } ?>
                                     </td>
-                                    <td class="text-left"><img src='<?php echo $product['color']; ?>'> </td>
-                                     <td class="text-center"><?php echo $product['size']; ?></td>
+                                    <td class="text-left crt-imgg-column"><img src='<?php echo $product['color']; ?>'> </td>
+                                     <td class="text-center crt-size-column"><?php echo $product['size']; ?></td>
                                     
                                     <td class="text-center crt-price-column">
                                         <?php if($product['price2']) { ?>
@@ -78,7 +78,7 @@
                                             <P class='new-prc'><?php echo $product['price']; ?></p>
                                         <?php } ?> 
                                     </td>
-                                    <td class="text-left">
+                                    <td class="text-left crt-qua-column">
                                         <div class="input-group btn-block qua-box-main" style="max-width: 200px;">
                                          <div class='minus'>-</div>
                                             <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="" />
@@ -110,10 +110,10 @@
            <?php /*echo $coupon;*/ ?> 
             
             <a class='buy-mores' href='/'>Прододжить покупки</a>
-            <a class='next-step' data-step='step2'>Дальше</a>
+            <a class='next-step' data-step='step2'>Продолжить оформление</a>
             </div>
             <div data-step='step2' class='tab step2'>
-            <h2 class="text-center h1" id="checkout-f"><?php echo $settings['buy_h2'.$lang]; ?></h2>
+            <!--<h2 class="text-center h1" id="checkout-f"><?php echo $settings['buy_h2'.$lang]; ?></h2>-->
             <br />
             <div class="row inputs-steps-wrap" >
                 <?php if($settings['buy_shipping_select']){ ?>
@@ -151,8 +151,8 @@
                     <div class='col-sm-6'>
                     <?php if($settings['buy_firstname_status']){ ?>
                     <div class="form-group<?php if($settings['buy_firstname_required']){ ?> required<?php } ?>">
-                        <label class="control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
-                        <input type="text" name="firstname" value="<?php echo $firstname; ?>" placeholder="<?php echo $entry_firstname; ?>" id="input-payment-firstname" class="form-control" />
+                        <label class="control-label" for="input-payment-firstname">Имя</label>
+                        <input type="text" name="firstname" value="<?php echo $firstname; ?>" placeholder="Имя" id="input-payment-firstname" class="form-control" />
                     </div>
                     <?php } ?>
                     <?php if($settings['buy_lastname_status']){ ?>
@@ -281,7 +281,7 @@
                 </div>
             </div>
             <a class='prev-step' data-step='step1'>Назад</a>
-            <a class='next-step' data-step='step3'>Дальше</a>
+            <a class='next-step' data-step='step3'>Продолжить оформление</a>
             </div>
             <div data-step='step3' class='tab step3'>
                 <?php if($settings['buy_payment_select']){ ?>
@@ -293,34 +293,34 @@
                 <?php } ?>
                 
                 <a class='prev-step' data-step='step2'>Назад</a>
-                <a class='next-step' data-step='step4'>Дальше</a>
+                <a class='next-step' data-step='step4'>Продолжить оформление</a>
             </div>
-            <div data-step='step4' class='tab step4'>
+            <div data-step='step4' class='tab step4 clearfix'>
             
             <div class='col-sm-4'>
-                <span>DELIVERY</span>
+                <span>Доставка</span>
                 <div class='ship-st4'>
                     
                 </div>
                 <div class='address-st4'>
                     
                 </div>
-                <span>PAYMENT</span>
+                <span>Оплата</span>
                 <div class='paym-st4'>
                     
                 </div>
             </div>
             <div class='col-sm-8'>
-                <table class="table" id='cart-load'>
+                <table class="table " id='cart-load'>
                         <thead>
                             <tr>
                                 <td class="text-left crt-img-column">Изображение</td>
                                 <td class="text-center crt-name-column"></td>
                                 <td class="text-center crt-model-column">Цвет</td>
                                 <td class="text-center crt-model-column">Размер</td>
-                                <td class="text-center "><?php echo $column_price; ?></td>
-                                <td class="text-center crt-qua-column"><?php echo $column_quantity; ?></td>
-                                <td class="text-center crt-total-column"><?php echo $column_total; ?></td>
+                                <td class="text-center ">Цена</td>
+                                <td class="text-center crt-qua-column">Количество</td>
+                                <td class="text-center crt-total-column">Итого</td>
                                 <td class="text-center"></td>
                             </tr>
                         </thead>
@@ -337,7 +337,7 @@
                                         <?php } ?>
                                     </td>
                                     <td class="text-left"><img src='<?php echo $product['color']; ?>'> </td>
-                                     <td class="text-left"><?php echo $product['size']; ?></td>
+                                     <td class="text-center"><?php echo $product['size']; ?></td>
                                     
                                     <td class="text-center crt-price-column">
                                         <?php if($product['price2']) { ?>
@@ -347,13 +347,8 @@
                                             <P class='new-prc'><?php echo $product['price']; ?></p>
                                         <?php } ?> 
                                     </td>
-                                    <td class="text-left">
-                                        <div class="input-group btn-block qua-box-main" style="max-width: 200px;">
-                                         <div class='minus'>-</div>
-                                            <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="" />
-                                        <div class='plus'>+</div>
-                                            
-                                        </div>
+                                    <td class="text-center">
+                                            <?php echo $product['quantity']; ?>
                                     </td>
                                     <td class="text-center"><?php echo $product['total']; ?></td>
                                     <td class="text-center crt-remoo-box"><button type="button" data-toggle="tooltip"  class="" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times"></i></button></td>
@@ -362,7 +357,7 @@
                           
                             <?php $total = end($totals);  ?>
                             <tr class="total-item">
-                                <td colspan="4" style="border:none;"> </td>
+                                <td colspan="6" style="border:none;"> </td>
                                 <td class="text-center"><strong><?php echo $total['title']; ?>:</strong></td>
                                 <td class="text-center"><?php echo $total['text']; ?></td>
                             </tr>
@@ -372,18 +367,18 @@
             </div>
             <!--<strong><?php echo $total['title']; ?>:</strong><?php echo $total['text']; ?>-->
             <a class='prev-step' data-step='step3'>Назад</a>
-            <input type="button" value="<?php echo $button_order; ?>" id="button-order" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-success" />
+            <input type="button" value="Подтвердить заказ" id="button-order" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-success" />
             </div>
 
             <div class='present-box'>
                 <div class="container">
                     <div class="row">
                         <div class="present-inner-box clearfix">
-                            <div class='col-sm-8'>
+                            <div class='col-sm-7'>
                                 <div class="left-present-box clearfix">
-                                    <div class='col-sm-7'>
+                                    <div class='col-sm-7' style='padding:0'>
                                         <h3>Подарок за покупку</h3>
-                                        <p>Брендовый шарф или фирменная подвеска. Тебе выбирать!</p>
+                                        <p>Брендовый шарф или фирменная подвеска. <i class='i-bolder'>Тебе выбирать!</i></p>
                                     </div>
                                     <div class='btn-group-present clearfix col-sm-5'>
                                         <div class="btn-group-present-item col-sm-6">
@@ -399,7 +394,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class='col-sm-4'>
+                            <div class='col-sm-5'>
                                 <div class="right-present-box">
                                     <div>
                                         <p>Самовывоз<br> из Москва - Сити</p>

@@ -45,9 +45,7 @@
 	<?php if( $heading_title ) { ?>
 		<h3 class="box-heading"><?php echo $heading_title; ?></h3>
 	<?php } ?>
-	<div id='filtered_products_amount'>
-		
-	</div>
+
 	<div class="box-content mfilter-content<?php echo empty( $settings['calculate_number_of_products'] ) || empty( $settings['show_number_of_products'] ) ? ' mfilter-hide-counter' : ''; ?>">
 		<?php echo $buttons['top']; ?>
 		<ul>

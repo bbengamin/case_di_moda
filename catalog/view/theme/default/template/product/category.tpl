@@ -19,7 +19,9 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row">
+    <input type='hidden' id='filtered_products_input' value='Всего <?php echo $filtered_products_amount; ?> товаров'>
+    <?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -28,7 +30,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-    <input type='hidden' id='filtered_products_input' value='Всего <?php echo $filtered_products_amount; ?> товаров'>
+    
 
       <?php if ($thumb || $description) { ?>
       <div class="row">
@@ -70,8 +72,8 @@
         <div class="col-md-12 sorts-box">
           <p>Сортировть по </p>
           <!--<a class='custom-sort <?php echo $sorts['default']['view']; ?> <?php echo ($sorts['default']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['default']['href']; ?>'>Умолчанию ↑	↓</a> -->
-          <a class='custom-sort <?php echo $sorts['price']['view']; ?> <?php echo ($sorts['price']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['price']['href']; ?>'>Цене ↑	↓</a>
-          <a class='custom-sort <?php echo $sorts['name']['view']; ?> <?php echo ($sorts['name']['value'] == $sort . "_ " . $order) ? "active" : ""; ?>' href='<?php echo $sorts['name']['href']; ?>'>Названию ↑	↓</a>
+          <a class='custom-sort <?php echo $sorts['price']['view']; ?> <?php echo ($sorts['price']['value_c'] == $sort . "-" . $order) ? "active" : ""; ?>' href='<?php echo $sorts['price']['href']; ?>'>Цене <span class='ar-up'><i class="fa fa-long-arrow-up" aria-hidden="true"></i></span>	<span class='ar-dwn'><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span></a>
+          <a class='custom-sort <?php  echo $sorts['name']['view']; ?> <?php echo ($sorts['name']['value_c'] == $sort . "-" . $order) ? "active" : ""; ?>' href='<?php echo $sorts['name']['href']; ?>'>Названию <span class='ar-up'><i class="fa fa-long-arrow-up" aria-hidden="true"></i></span>	<span class='ar-dwn'><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span></a>
         </div>
       </div>
       <br />
@@ -117,7 +119,7 @@
         <?php } ?>
       </div>
       <div class="row">
-        <div class="col-sm-12 text-center"><?php echo $pagination; ?></div>
+        <div class="col-sm-12 text-left"><?php echo $pagination; ?></div>
        
       </div>
       <?php } ?>

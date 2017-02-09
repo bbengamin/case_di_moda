@@ -470,6 +470,18 @@ $(document).ready( function(){
 
 
 $(document).ready(function(){
+	$('#menu .nav .drop-category .dropdown-menu').hover(function(){
+		$(this).prev().addClass("hovered");
+	},function(){
+		$(this).prev().removeClass("hovered");
+	});
+	$('#menu .nav .drop-category').hover(function(){
+		$(this).addClass("hovered");
+		$(this).find('.top-menu-link').addClass("hovered");
+	},function(){
+		$(this).removeClass("hovered");
+		$(this).find('.top-menu-link').removeClass("hovered");
+	});
 	$('#filtered_products_amount').text($('#filtered_products_input').val());	
 	
 	$('.go-to-register').on('click',function(){

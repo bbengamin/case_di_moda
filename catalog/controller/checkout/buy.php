@@ -43,7 +43,7 @@ class ControllerCheckoutBuy extends Controller {
 
         $data['breadcrumbs'][] = array(
             'href' => $this->url->link('checkout/buy'),
-            'text' => $data['settings']['buy_h1'.$lang]
+            'text' => "Оформление заказа"
         );
 
         if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
@@ -159,7 +159,7 @@ class ControllerCheckoutBuy extends Controller {
                         $color = $this->model_tool_image->resize($img_q->row['image'], 19,19);
                     }
                     
-                    if ($option['option_id'] == '14') {
+                    if ($option['option_id'] == '15') {
                         $size = $option['value'];
                     }
                         
@@ -1530,7 +1530,7 @@ class ControllerCheckoutBuy extends Controller {
                 $json = array();
                 $json['totals'] = '';
                 $total = end($total_data);
-                $json['totals'] .= '<tr class="total-item"><td colspan="4" style="border:none;"> </td><td class="text-right"><strong>'.$total['title'].'</strong></td><td class="text-right">'.$this->currency->format($total['value']).'</td></tr>';
+                $json['totals'] .= '<tr class="total-item"><td colspan="6" style="border:none;"> </td><td class="text-right"><strong>'.$total['title'].'</strong></td><td class="text-right">'.$this->currency->format($total['value']).'</td></tr>';
                 
                 $this->response->setOutput(json_encode($json));
             }

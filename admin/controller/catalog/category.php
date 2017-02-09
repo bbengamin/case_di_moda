@@ -469,6 +469,23 @@ class ControllerCatalogCategory extends Controller {
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
+		
+		if (isset($this->request->post['img_menu'])) {
+			$data['img_menu'] = $this->request->post['img_menu'];
+		} elseif (!empty($category_info)) {
+			$data['img_menu'] = $category_info['img_menu'];
+		} else {
+			$data['img_menu'] = '';
+		}
+
+
+		if (isset($this->request->post['img_menu']) && is_file(DIR_IMAGE . $this->request->post['img_menu'])) {
+			$data['thumb_menu'] = $this->model_tool_image->resize($this->request->post['img_menu'], 100, 100);
+		} elseif (!empty($category_info) && is_file(DIR_IMAGE . $category_info['img_menu'])) {
+			$data['thumb_menu'] = $this->model_tool_image->resize($category_info['img_menu'], 100, 100);
+		} else {
+			$data['thumb_menu'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+		}
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 

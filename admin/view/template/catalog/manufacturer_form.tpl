@@ -81,6 +81,12 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-image_big"><?php echo $entry_image; ?> BIG CATEGORY</label>
+            <div class="col-sm-10"> <a href="" id="thumb-thumb_big" data-toggle="image" class="img-thumbnail"><img src="<?php echo $thumb_big; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
+              <input type="hidden" name="image_big" value="<?php echo image_big; ?>" id="input-image_big" />
+            </div>
+          </div>
+          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-sort-order"><?php echo $entry_sort_order; ?></label>
             <div class="col-sm-10">
               <input type="text" name="sort_order" value="<?php echo $sort_order; ?>" placeholder="<?php echo $entry_sort_order; ?>" id="input-sort-order" class="form-control" />
