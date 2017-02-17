@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']					= 'Оплата при доставке';
+$_['heading_title']					= 'Оплата картой (возможна тоько в магазине)';
 
 // Text
 $_['text_payment']					= 'Оплата';

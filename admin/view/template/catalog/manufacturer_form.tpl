@@ -75,6 +75,12 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-text">Текст в категориях</label>
+            <div class="col-sm-10">
+              <textarea name="text" value="<?php echo text; ?>"  id="input-text" class="form-control"><?php echo $text; ?></textarea>
+            </div>
+          </div>
+          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-image"><?php echo $entry_image; ?></label>
             <div class="col-sm-10"> <a href="" id="thumb-image" data-toggle="image" class="img-thumbnail"><img src="<?php echo $thumb; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
               <input type="hidden" name="image" value="<?php echo $image; ?>" id="input-image" />
@@ -83,7 +89,7 @@
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-image_big"><?php echo $entry_image; ?> BIG CATEGORY</label>
             <div class="col-sm-10"> <a href="" id="thumb-thumb_big" data-toggle="image" class="img-thumbnail"><img src="<?php echo $thumb_big; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
-              <input type="hidden" name="image_big" value="<?php echo image_big; ?>" id="input-image_big" />
+              <input type="hidden" name="image_big" value="<?php echo $image_big; ?>" id="input-image_big" />
             </div>
           </div>
           <div class="form-group">
@@ -97,4 +103,7 @@
     </div>
   </div>
 </div>
+  <script type="text/javascript"><!--
+$('#input-text').summernote({height: 300});
+//--></script>
 <?php echo $footer; ?>

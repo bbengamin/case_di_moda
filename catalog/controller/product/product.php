@@ -499,7 +499,7 @@ class ControllerProductProduct extends Controller {
 
 			$data['related_products'] = array();
 			$data['related_products2'] = array();
-			if(isset($category_id) && $category_id){
+			if(isset($category_id) && $category_id && $product_info['manufacturer_id']){
 				
 				$recomendet_query = $this->db->query('SELECT p2c.product_id FROM oc_product_to_category as p2c 
 							LEFT JOIN oc_product as p ON p.product_id=p2c.product_id WHERE p2c.category_id=' . $chapter . 

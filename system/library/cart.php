@@ -235,6 +235,13 @@ class Cart {
 				} else {
 					$recurring = false;
 				}
+				
+				$special = false;
+				$total = ($price + $option_price) * $cart['quantity'];
+				if(isset($product_query->row['price']) && ($this->customer->isLogged() || (isset($this->session->data['show_sale']) && $this->session->data['show_sale']))){
+					$special = $product_query->row['price'] * 0.8;
+					$total = ($special + $option_price) * $cart['quantity'];
+				}
 
 				$product_data[] = array(
 					'cart_id'         => $cart['cart_id'],
@@ -250,7 +257,7 @@ class Cart {
 					'subtract'        => $product_query->row['subtract'],
 					'stock'           => $stock,
 					'price'           => ($price + $option_price),
-					'total'           => ($price + $option_price) * $cart['quantity'],
+					'total'           => $total,
 					'reward'          => $reward * $cart['quantity'],
 					'points'          => ($product_query->row['points'] ? ($product_query->row['points'] + $option_points) * $cart['quantity'] : 0),
 					'tax_class_id'    => $product_query->row['tax_class_id'],
@@ -350,7 +357,7 @@ class Cart {
 		$total = 0;
 
 		foreach ($this->getProducts() as $product) {
-			$total += $this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity'];
+			$total += $this->tax->calculate($product['total'], $product['tax_class_id'], $this->config->get('config_tax'));
 		}
 
 		return $total;

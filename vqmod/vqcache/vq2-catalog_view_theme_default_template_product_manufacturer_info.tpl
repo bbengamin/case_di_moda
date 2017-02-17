@@ -1,7 +1,8 @@
 <?php echo $header; ?><?php if( ! empty( $mfilter_json ) ) { echo '<div id="mfilter-json" style="display:none">' . base64_encode( $mfilter_json ) . '</div>'; } ?>
 <div class="categoru-main-ttl-box">
   <?php if ($thumb) { ?> <!-- class="col-sm-2" class="img-thumbnail" -->
-        <img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class='img-categ-back' />
+        <div class='head-back' style="background-image: url('<?php echo $thumb; ?>');"></div>
+        <!--<img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class='img-categ-back' /> -->
         <?php } ?>
   <div class="container">
     <div class="row">
@@ -12,7 +13,13 @@
     </div>
   </div>
 </div>
+
 <div class="container">
+   <?php if ($text) { ?>
+  <div class="row text_man">
+    <?php echo $text; ?>
+  </div>
+  <?php } ?>
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
@@ -29,7 +36,7 @@
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><div id="mfilter-content-container">
     <input type='hidden' id='filtered_products_input' value='Всего <?php echo $filtered_products_amount; ?> товаров'>
       <?php if ($products) { ?>
-    
+       
       <div class="row">
         
        <div class="col-md-12 sorts-box">

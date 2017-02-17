@@ -232,6 +232,7 @@ class ControllerProductManufacturer extends Controller {
 			);
 
 			$data['heading_title'] = $manufacturer_info['name'];
+			$data['text'] = $manufacturer_info['text'];
 		
 			if (isset($manufacturer_info['image_big']) && $manufacturer_info['image_big']) {
 				$data['thumb'] = "/image/" . $manufacturer_info['image_big'];//$this->model_tool_image->resize($category_info['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));

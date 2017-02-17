@@ -1,6 +1,6 @@
 <div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="cart-add-button dropdown-toggle"><span class="left-icons user-ico"><img src="/catalog/view/theme/default/image/shopping-cart-icon.png" class="img-responsive"> </span>Корзина<span id="cart-total"><?php echo $text_items; ?></span></button>
-  <ul class="dropdown-menu pull-right">
+  <button type="button" data-toggle="dropdown" onclick="location.href='/index.php?route=checkout/buy'" data-loading-text="<?php echo $text_loading; ?>" class="cart-add-button dropdown-toggle"><span class="left-icons user-ico"><img src="/catalog/view/theme/default/image/shopping-cart-icon.png" class="img-responsive"> </span>Корзина<span id="cart-total"><?php echo $text_items; ?></span></button>
+  <!--<ul class="dropdown-menu pull-right">
     <?php if ($products || $vouchers) { ?>
     <li>
       <table class="table table-striped">
@@ -49,5 +49,5 @@
       <p class="text-center epmty-catr-rext"><?php echo $text_empty; ?></p>
     </li>
     <?php } ?>
-  </ul>
+  </ul>-->
 </div>

@@ -1,7 +1,8 @@
 <?php echo $header; ?>
 <div class="categoru-main-ttl-box">
-  <?php if ($thumb) { ?> <!-- class="col-sm-2" class="img-thumbnail" -->
-        <img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class='img-categ-back' />
+        <?php if ($thumb) { ?> <!-- class="col-sm-2" class="img-thumbnail" -->
+        <div class='head-back' style="background-image: url('<?php echo $thumb; ?>');"></div>
+        <!--<img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class='img-categ-back' /> -->
         <?php } ?>
   <div class="container">
     <div class="row">
@@ -40,7 +41,7 @@
       </div>
       
       <?php } ?>
-      <?php if ($categories) { ?>
+      <?php if ($categories) { /* ?>
       <h3><?php echo $text_refine; ?></h3>
       <?php if (count($categories) <= 5) { ?>
       <div class="row">
@@ -65,7 +66,7 @@
         <?php } ?>
       </div>
       <?php } ?>
-      <?php } ?>
+      <?php */ } ?>
       <?php if ($products) { ?>
       
       <div class="row">

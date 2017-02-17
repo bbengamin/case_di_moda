@@ -8,7 +8,7 @@ class ControllerPaymentLiqPay extends Controller {
 		$order_info = $this->model_checkout_order->getOrder($this->session->data['order_id']);
 
 		$data['action'] = 'https://liqpay.com/?do=clickNbuy';
-
+$data['continue'] = $this->url->link('checkout/success');
 		$xml  = '<request>';
 		$xml .= '	<version>1.2</version>';
 		$xml .= '	<result_url>' . $this->url->link('checkout/success', '', 'SSL') . '</result_url>';
@@ -31,7 +31,14 @@ class ControllerPaymentLiqPay extends Controller {
 			return $this->load->view('default/template/payment/liqpay.tpl', $data);
 		}
 	}
+	public function confirm() {
+		if ($this->session->data['payment_method']['code'] == 'liqpay') {
+			$this->load->model('checkout/order');
 
+			$this->model_checkout_order->addOrderHistory($this->session->data['order_id'], $this->config->get('cod_order_status_id'));
+		}
+	}
+	
 	public function callback() {
 		$xml = base64_decode($this->request->post['operation_xml']);
 		$signature = base64_encode(sha1($this->config->get('liqpay_signature') . $xml . $this->config->get('liqpay_signature'), true));

@@ -1,16 +1,31 @@
 <div class="most-fetured clearfix">
   <div class="col-sm-6 more-featur-block1">
-    <h3 class="most-fetured-ttl"><a href="#">Для женщин</a></h3>
-    <p class="most-fetured-dwn-ttl">От ведущих производителей</p>
-    <p class="most-fetured-descript">Обувь, перчатки<br> и многое другое</a>
+    <div class="featr-item featr-item-big featr-item-brand">
+      <a href='/index.php?route=product/manufacturer'>
+        <img src='/catalog/view/theme/default/image/news-brend.jpg' class='img-responsive'>
+        <span>Бренды</span>
+      </a>
+    </div>
+    <div class="featr-item featr-item-small featr-item-bags">
+      <a href='/Test8'>
+        <img src='/catalog/view/theme/default/image/news-bags.jpg' class='img-responsive'>
+        <span>Сумки</span>
+      </a>
+    </div>
   </div>
-  <div class="col-sm-3 more-featur-block2">
-    <h3 class="most-fetured-ttl"><a href="#">ДЛЯ МУЖЧИН</a></h3>
-    <p class="most-fetured-dwn-ttl">Настоящее мужское качество</p>
-  </div>
-  <div class="col-sm-3 more-featur-block3">
-    <h3 class="most-fetured-ttl"><a href="#">АКСЕССУАРЫ</a></h3>
-    <p class="most-fetured-dwn-ttl">Лучшие женские побрекушки</p>
+  <div class="col-sm-6 more-featur-block1">
+    <div class="featr-item featr-item-small featr-item-mans">
+      <a href='/Test13'>
+        <img src='/catalog/view/theme/default/image/news-man.jpg' class='img-responsive'>
+        <span>Мужское</span>
+      </a>
+    </div>
+    <div class="featr-item featr-item-big featr-item-glasses">
+      <a href='Test1'>
+        <img src='/catalog/view/theme/default/image/news-glasses.jpg' class='img-responsive'>
+        <span>Женское</span>
+      </a>
+    </div>
   </div>
 </div>
 <h3 class="mod-ttl"><?php echo $heading_title; ?></h3>

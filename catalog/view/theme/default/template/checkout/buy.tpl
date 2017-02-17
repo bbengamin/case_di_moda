@@ -89,14 +89,15 @@
                                     <td class="text-center crt-ttl-box"><?php echo $product['total']; ?></td>
                                     <td class="text-center crt-remoo-box"><button type="button" data-toggle="tooltip"  class="" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times"></i></button></td>
                                 </tr>
+                                
                             <?php } ?>
                           
-                            <!-- <?php $total = end($totals);  ?>
+                            <?php $total = end($totals);  ?>
                             <tr class="total-item">
-                                <td colspan="4" style="border:none;"> </td>
+                                <td colspan="6" style="border:none;"> </td>
                                 <td class="text-center"><strong><?php echo $total['title']; ?>:</strong></td>
                                 <td class="text-center"><?php echo $total['text']; ?></td>
-                            </tr> -->
+                            </tr> 
                         </tbody>
                     </table>
                 </div>
@@ -310,8 +311,8 @@
                     
                 </div>
             </div>
-            <div class='col-sm-8'>
-                <table class="table " id='cart-load'>
+            <div class='col-sm-8' id='cart-wrapp2'>
+                <table class="table" id='cart-load2'>
                         <thead>
                             <tr>
                                 <td class="text-left crt-img-column">Изображение</td>
@@ -355,9 +356,8 @@
                                 </tr>
                             <?php } ?>
                           
-                            <?php $total = end($totals);  ?>
                             <tr class="total-item">
-                                <td colspan="6" style="border:none;"> </td>
+                                <td colspan="4" style="border:none;"> </td>
                                 <td class="text-center"><strong><?php echo $total['title']; ?>:</strong></td>
                                 <td class="text-center"><?php echo $total['text']; ?></td>
                             </tr>
@@ -365,9 +365,8 @@
                     </table>
                     
             </div>
-            <!--<strong><?php echo $total['title']; ?>:</strong><?php echo $total['text']; ?>-->
             <a class='prev-step' data-step='step3'>Назад</a>
-            <input type="button" value="Подтвердить заказ" id="button-order" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-success" />
+            <input type="button" value="Подтвердить заказ" id="button-order" data-loading-text="<?php echo $text_loading; ?>" class="confirm-order-btn" />
             </div>
 
             <div class='present-box'>
@@ -463,6 +462,7 @@
             dataType: 'json',
             success: function(json) {
                 $('#che-form').load('index.php?route=checkout/buy #cart-wrapp');
+                $('#cart-wrapp2').load('index.php?route=checkout/buy #cart-load2');
             }
         });
     });
@@ -477,6 +477,7 @@
             dataType: 'json',
             success: function(json) {
                 $('#che-form').load('index.php?route=checkout/buy #cart-wrapp');
+                $('#cart-wrapp2').load('index.php?route=checkout/buy #cart-load2');
             }
         });
     });
@@ -714,9 +715,9 @@ cart.remove = function(key) {
                 success: function(json) {
                     $('.ship-st4').text($('input[name="shipping_method"]:checked').attr('data-text'));
                     if(json['totals']){
-                        var container = $('.total-item').closest('table');
+                      /*  var container = $('.total-item').closest('table');
                         container.children('tbody').children('.total-item').remove();
-                        container.children('tbody').append(json['totals']);
+                        container.children('tbody').append(json['totals']);*/
                     }
                 }
             });

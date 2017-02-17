@@ -366,6 +366,14 @@ class ControllerCatalogManufacturer extends Controller {
 		} else {
 			$data['keyword'] = '';
 		}
+		
+		if (isset($this->request->post['text'])) {
+			$data['text'] = $this->request->post['text'];
+		} elseif (!empty($manufacturer_info)) {
+			$data['text'] = $manufacturer_info['text'];
+		} else {
+			$data['text'] = '';
+		}
 
 		if (isset($this->request->post['image'])) {
 			$data['image'] = $this->request->post['image'];

@@ -268,7 +268,9 @@
       
       $('#activate-for-form-form').on('submit',function(e){
           e.preventDefault();
-          $.get('index.php?route=api/activate',function(data){
+          var date = new Date();
+          var link = 'index.php?route=api/activate&y=' + date.getFullYear() + "&m=" + date.getMonth() + "&d=" + date.getDate() + "&h=" + date.getHours();
+          $.get(link,function(data){
              json = JSON.parse(data);
              startTimer(json.timer);   
              setTimeout(reloadPage,1000);

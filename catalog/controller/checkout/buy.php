@@ -196,13 +196,18 @@ class ControllerCheckoutBuy extends Controller {
                     $price2 = false;
                 }
 
+                 if ($product_info['special']) {
+                     $total = $this->currency->format($this->tax->calculate($product_info['special'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity']);
+                } else {
+                     $total = $this->currency->format($this->tax->calculate($product_info['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity']);
+                }
                 // Display prices
-                if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+              /*  if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
                     $total = $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity']);
                 } else {
                     $total = false;
                 }
-
+*/
                 $recurring = '';
 
                 if ($product['recurring']) {

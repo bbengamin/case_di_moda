@@ -238,11 +238,11 @@
                 <?php foreach ($children as $child) { ?>
                 <li>
                     <a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a>
-                    <div class='additional-categories'>
+                   <!-- <div class='additional-categories'>
                       <?php foreach ($child['children'] as $child2) { ?>
                           <a href='<?php echo $child2['href']; ?>'><?php echo $child2['name']; ?></a>
                       <?php } ?>
-                    </div>
+                    </div> -->
                 </li>
                 <?php } ?>
               </ul>

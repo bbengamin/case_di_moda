@@ -80,11 +80,25 @@
             <?php } ?>
           </ul>
           <div >
+            <!--<div class="materials">
+              <span class='materialses material-head'>Материал: </span>
+              <span class='materialses material-name'> Натуральная кожа</span>
+            </div>-->
+            
+            <?php if ($attribute_groups) { ?>
+              <?php foreach ($attribute_groups as $group) { ?>
+                <?php foreach ($group['attribute'] as $attribute) { ?>
+                  <div><?php echo $attribute['name']; ?> : <?php echo $attribute['text']; ?></div>
+                <?php } ?>
+              <?php } ?>
+            <?php } ?>
             <?php if ($options) { ?>
-            <hr>
-            <h3><?php echo $text_option; ?></h3>
+            
+            
             <?php foreach ($options as $option) { ?>
             <?php if ($option['type'] == 'select') { ?>
+            <hr>
+            <h3><?php echo $text_option; ?></h3>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <select name="option[<?php echo $option['product_option_id']; ?>]" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control">
@@ -227,7 +241,7 @@
             </div>
             
             <div class="have-questions">
-              <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product_id; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-quick-buy" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn last-product-button">Есть вопросы? Закажите звонок</button>
+              <button type="button" onclick="addProductIdToFastorderForm('<?php echo $product_id; ?>')" id="one-click-buy" data-toggle="modal" data-target="#myModal-call-back" data-loading-text="<?php echo $text_loading; ?>" class="buttons-product one-click-btn last-product-button">Есть вопросы? Закажите звонок</button>
             </div>
            
           </div>
